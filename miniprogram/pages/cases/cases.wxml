@@ -1,0 +1,42 @@
+<view class="cases-page">
+  <scroll-view class="cases-scroll" scroll-y>
+    <view class="search-section">
+      <view class="search-box">
+        <input class="search-input" placeholder="请输入型号关键词" placeholder-class="search-placeholder" value="{{searchKeyword}}" bindinput="onSearchInput" confirm-type="search" />
+        <view wx:if="{{searchKeyword}}" class="search-clear" bindtap="onClearSearch">
+          <view class="clear-line clear-line-left"></view>
+          <view class="clear-line clear-line-right"></view>
+        </view>
+        <view class="search-icon-btn">
+          <image class="search-icon-img" src="/images/search.png" mode="aspectFit"></image>
+        </view>
+      </view>
+    </view>
+
+    <scroll-view class="filter-tabs" scroll-x>
+      <view class="filter-tab {{activeCategory === item.id ? 'active' : ''}}" wx:for="{{categories}}" wx:key="id" data-id="{{item.id}}" bindtap="onCategoryChange">
+        {{item.name}}
+      </view>
+    </scroll-view>
+
+    <view class="cases-grid">
+      <view class="case-item" wx:for="{{filteredCases}}" wx:key="id">
+        <view class="case-card">
+          <view class="case-img-wrap">
+            <image class="case-img" src="{{item.image}}" mode="aspectFill"></image>
+            <view class="case-brand-tag">UCB·N</view>
+          </view>
+          <view class="case-info">
+            <text class="case-title">{{item.name}} | {{item.code}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="cases-empty" wx:if="{{filteredCases.length === 0}}">
+      <text class="empty-text">暂无相关实例</text>
+    </view>
+
+    <view class="cases-bottom-space"></view>
+  </scroll-view>
+</view>

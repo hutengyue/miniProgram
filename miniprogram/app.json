@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/brand/brand",
+    "pages/products/products",
+    "pages/cases/cases",
+    "pages/stores/stores"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#FFFFFF"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "color": "rgba(255, 255, 255, 0.5)",
+    "selectedColor": "#FFFFFF",
+    "backgroundColor": "#0A0A0A",
+    "borderStyle": "black",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/brand/brand", "text": "品牌" },
+      { "pagePath": "pages/products/products", "text": "产品" },
+      { "pagePath": "pages/cases/cases", "text": "实例" },
+      { "pagePath": "pages/stores/stores", "text": "门店" }
+    ]
+  }
+}

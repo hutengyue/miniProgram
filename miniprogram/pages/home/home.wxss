@@ -1,0 +1,228 @@
+.home-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #0A0A0A;
+}
+
+.home-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 100vh;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.6) 0%,
+    rgba(10, 10, 10, 0.3) 40%,
+    rgba(10, 10, 10, 0.5) 70%,
+    rgba(10, 10, 10, 0.9) 100%
+  );
+}
+
+.slide-overlay.dark {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.7) 0%,
+    rgba(10, 10, 10, 0.5) 50%,
+    rgba(10, 10, 10, 0.85) 100%
+  );
+}
+
+.slide-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 48rpx 220rpx;
+}
+
+/* Slide 1 - Hero */
+.slide-hero .brand-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 240rpx;
+}
+
+.slide-hero .brand-name {
+  font-size: 52rpx;
+  color: #FFFFFF;
+  letter-spacing: 12rpx;
+  font-weight: 300;
+  text-align: center;
+}
+
+.slide-hero .brand-divider {
+  width: 80rpx;
+  height: 2rpx;
+  background: linear-gradient(90deg, transparent, rgba(201, 169, 98, 0.6), transparent);
+  margin: 32rpx 0;
+}
+
+.slide-hero .brand-slogan {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 8rpx;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Slide 2 - Philosophy */
+.slide-philosophy {
+  background: #0A0A0A;
+}
+
+.philosophy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160rpx;
+}
+
+.philosophy-title {
+  font-size: 48rpx;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 4rpx;
+  margin-bottom: 16rpx;
+}
+
+.philosophy-subtitle {
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 6rpx;
+  text-transform: uppercase;
+}
+
+.philosophy-divider {
+  width: 60rpx;
+  height: 2rpx;
+  background-color: #C9A962;
+  margin: 48rpx auto;
+}
+
+.philosophy-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48rpx;
+}
+
+.philosophy-line {
+  font-size: 30rpx;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 2rpx;
+}
+
+.philosophy-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.philosophy-sub-item {
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 4rpx;
+  font-weight: 300;
+  margin-bottom: 16rpx;
+}
+
+/* Slide 3 - CTA */
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200rpx;
+}
+
+.cta-title {
+  font-size: 44rpx;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+  margin-bottom: 32rpx;
+}
+
+.cta-desc {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 2rpx;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-btn {
+  width: 320rpx;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid rgba(255, 255, 255, 0.4);
+  border-radius: 44rpx;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cta-hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.cta-text {
+  font-size: 30rpx;
+  color: #FFFFFF;
+  letter-spacing: 6rpx;
+  font-weight: 300;
+}
+
+/* Scroll hint */
+.scroll-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-arrow {
+  width: 20rpx;
+  height: 20rpx;
+  border-right: 2rpx solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.4);
+  transform: rotate(45deg);
+}

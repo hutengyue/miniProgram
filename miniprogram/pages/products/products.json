@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "产品",
+  "navigationBarBackgroundColor": "#0A0A0A",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

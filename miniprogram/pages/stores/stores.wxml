@@ -1,0 +1,49 @@
+<view class="stores-page">
+  <scroll-view class="stores-scroll" scroll-y>
+    <view class="search-section">
+      <view class="search-box">
+        <input class="search-input" placeholder="请输入门店关键词" placeholder-class="search-placeholder" value="{{searchKeyword}}" bindinput="onSearchInput" confirm-type="search" />
+        <view wx:if="{{searchKeyword}}" class="search-clear" bindtap="onClearSearch">
+          <view class="clear-line clear-line-left"></view>
+          <view class="clear-line clear-line-right"></view>
+        </view>
+        <view class="search-icon-btn">
+          <image class="search-icon-img" src="/images/search.png" mode="aspectFit"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class="stores-list">
+      <view class="store-card" wx:for="{{filteredStores}}" wx:key="id">
+        <view class="store-top">
+          <view class="store-title">
+            <text class="store-city-cn">{{item.city}}</text>
+            <text class="store-city-en">/{{item.cityEn}}</text>
+          </view>
+          <view class="store-nav-btn" data-address="{{item.address}}" catchtap="onNavigate" hover-class="nav-btn-hover">
+            <image class="nav-icon" src="/images/route.png" mode="aspectFit"></image>
+          </view>
+        </view>
+
+        <view class="store-divider"></view>
+
+        <view class="store-body">
+          <view class="store-row">
+            <view class="row-dot"></view>
+            <text class="row-text" data-address="{{item.address}}" bindlongpress="onCopyAddress">{{item.address}}</text>
+          </view>
+          <view class="store-row">
+            <view class="row-dot row-dot-clock"></view>
+            <text class="row-text">{{item.hours}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="stores-empty" wx:if="{{filteredStores.length === 0}}">
+      <text class="empty-text">未找到相关门店</text>
+    </view>
+
+    <view class="stores-bottom-space"></view>
+  </scroll-view>
+</view>

@@ -1,0 +1,62 @@
+<view class="home-page">
+  <swiper class="home-swiper" vertical="{{true}}" autoplay="{{false}}" circular="{{false}}" indicator-dots="{{false}}" duration="{{400}}">
+    <swiper-item class="swiper-item">
+      <view class="slide slide-hero">
+        <image class="slide-bg" src="{{brand.heroImage}}" mode="aspectFill"></image>
+        <view class="slide-overlay"></view>
+        <view class="slide-content" style="padding-top: {{statusBarHeight + 44}}px;">
+          <view class="brand-area">
+            <view class="brand-name">{{brand.brandName}}</view>
+            <view class="brand-divider"></view>
+            <view class="brand-slogan">{{brand.slogan}}</view>
+          </view>
+          <view class="scroll-hint">
+            <view class="scroll-arrow"></view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+
+    <swiper-item class="swiper-item">
+      <view class="slide slide-philosophy">
+        <view class="slide-content" style="padding-top: {{statusBarHeight + 80}}px;">
+          <view class="philosophy-section">
+            <view class="philosophy-title">{{brand.about.title}}</view>
+            <view class="philosophy-subtitle">{{brand.about.subtitle}}</view>
+          </view>
+          <view class="philosophy-divider"></view>
+          <view class="philosophy-text">
+            <view class="philosophy-line" wx:for="{{brand.about.description}}" wx:key="index">{{item}}</view>
+          </view>
+          <view class="philosophy-sub">
+            <view class="philosophy-sub-item" wx:for="{{brand.about.philosophy}}" wx:key="index">{{item}}</view>
+          </view>
+          <view class="scroll-hint">
+            <view class="scroll-arrow"></view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+
+    <swiper-item class="swiper-item">
+      <view class="slide slide-cta">
+        <image class="slide-bg" src="{{brand.brandImage}}" mode="aspectFill"></image>
+        <view class="slide-overlay dark"></view>
+        <view class="slide-content" style="padding-top: {{statusBarHeight + 44}}px;">
+          <view class="cta-section">
+            <view class="cta-title">探索美好秩序</view>
+            <view class="cta-desc">
+              <view>设计有了秩序，精确不冗余</view>
+              <view>生活有了秩序，从容不慌张</view>
+            </view>
+          </view>
+          <view class="cta-wrapper">
+            <view class="cta-btn" bindtap="onExplore" hover-class="cta-hover">
+              <text class="cta-text">即刻探索</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

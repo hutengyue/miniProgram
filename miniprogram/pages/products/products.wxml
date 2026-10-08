@@ -1,0 +1,43 @@
+<view class="products-page">
+  <view class="search-bar">
+    <view class="search-input-wrap">
+      <van-icon name="search" class="search-icon" />
+      <input class="search-input" placeholder="搜索关键词" placeholder-class="search-placeholder" value="{{searchKeyword}}" bindinput="onSearchInput" confirm-type="search" bindconfirm="onSearch" />
+    </view>
+    <view class="search-btn" bindtap="onSearch">搜索</view>
+  </view>
+
+  <view class="products-body">
+    <scroll-view class="category-nav" scroll-y>
+      <block wx:for="{{categories}}" wx:key="id">
+        <view class="category-major {{activeSectionId === item.id && !item.hasSub ? 'cat-active' : ''}}" data-id="{{item.id}}" bindtap="onToggleCategory">
+          <text class="cat-name">{{item.name}}</text>
+          <text class="cat-arrow">{{item.expanded ? '−' : '+'}}</text>
+        </view>
+        <view class="sub-list" wx:if="{{item.hasSub && item.expanded}}">
+          <view class="category-sub {{activeSectionId === sub.id ? 'cat-active' : ''}}" wx:for="{{item.subCategories}}" wx:for-item="sub" wx:key="id" data-id="{{sub.id}}" bindtap="onSelectSub">
+            {{sub.name}}
+          </view>
+        </view>
+      </block>
+      <view class="nav-bottom-space"></view>
+    </scroll-view>
+
+    <scroll-view class="content-area" scroll-y scroll-into-view="{{scrollToId}}" scroll-with-animation bindscroll="onContentScroll">
+      <view class="section" id="sec-{{item.id}}" wx:for="{{sections}}" wx:key="id">
+        <view class="banner-wrap" wx:if="{{item.bannerImage}}">
+          <image class="banner-img" src="{{item.bannerImage}}" mode="aspectFill"></image>
+        </view>
+        <view class="section-title">{{item.name}}</view>
+        <view class="product-grid" wx:if="{{item.products.length > 0}}">
+          <view class="product-card" wx:for="{{item.products}}" wx:for-item="product" wx:key="id" data-id="{{product.id}}" bindtap="onProductTap">
+            <image class="product-img" src="{{product.image}}" mode="aspectFill"></image>
+            <view class="product-name">{{product.name}}</view>
+          </view>
+        </view>
+        <view class="empty-tip" wx:else>敬请期待</view>
+      </view>
+      <view class="bottom-space"></view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+<view class="brand-page">
+  <scroll-view class="brand-scroll" scroll-y>
+    <view class="brand-hero">
+      <image class="brand-hero-img" src="{{brand.brandImage}}" mode="aspectFill"></image>
+      <view class="brand-hero-overlay"></view>
+      <view class="brand-logo">{{brand.brandName}}</view>
+    </view>
+
+    <view class="brand-content">
+      <view class="brand-section">
+        <view class="brand-title">{{brand.about.title}}</view>
+        <view class="brand-subtitle">{{brand.about.subtitle}}</view>
+      </view>
+
+      <view class="brand-divider-line"></view>
+
+      <view class="brand-desc">
+        <view class="brand-desc-line" wx:for="{{brand.about.description}}" wx:key="index">{{item}}</view>
+      </view>
+
+      <view class="brand-philosophy">
+        <view class="philosophy-item" wx:for="{{brand.about.philosophy}}" wx:key="index">
+          {{item}}
+        </view>
+      </view>
+
+      <view class="brand-closing">
+        <view class="closing-item" wx:for="{{brand.about.closing}}" wx:key="index">
+          {{item}}
+        </view>
+      </view>
+
+      <view class="brand-bottom-space"></view>
+    </view>
+  </scroll-view>
+</view>
