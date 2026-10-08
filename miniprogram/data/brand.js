@@ -18,5 +18,22 @@ module.exports = {
       '生活有了秩序，从容不慌张，便遇见了美好'
     ]
   },
-  brandImage: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80'
+  brandImage: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+  panoramas: [
+    {
+      id: 1,
+      name: '展厅全景',
+      image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=luxury%20bathroom%20showroom%20equirectangular%20panorama%20wide%20angle%20interior%20design%20elegant%20marble&image_size=landscape_16_9'
+    },
+    {
+      id: 2,
+      name: '浴室全景',
+      image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20luxury%20bathroom%20panoramic%20view%20bathtub%20marble%20floor%20ambient%20lighting&image_size=landscape_16_9'
+    },
+    {
+      id: 3,
+      name: '工坊全景',
+      image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=craftsman%20workshop%20panoramic%20interior%20handmade%20ceramics%20natural%20light%20artisan&image_size=landscape_16_9'
+    }
+  ]
 }

@@ -9,7 +9,6 @@ page {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding-bottom: calc(130rpx + env(safe-area-inset-bottom));
 }
 
 .search-bar {
@@ -135,10 +134,6 @@ page {
   background: #1A1A1A;
 }
 
-.nav-bottom-space {
-  height: 120rpx;
-}
-
 .content-area {
   flex: 1;
   height: 100%;
@@ -205,6 +200,10 @@ page {
   font-size: 26rpx;
   color: #BBBBBB;
   letter-spacing: 4rpx;
+}
+
+.nav-bottom-space {
+  height: 160rpx;
 }
 
 .bottom-space {
