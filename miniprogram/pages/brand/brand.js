@@ -1,12 +1,10 @@
-var brandInfo = require('../../data/brand.js')
+var dataService = require('../../data/data-service.js')
 
 Page({
   data: {
-    brand: brandInfo,
-    currentPanorama: brandInfo.panoramas[0],
+    brand: {},
     currentPanoramaIndex: 0,
-    panoramaOffsetX: 0,
-    panoramaDragged: false
+    showHint: true
   },
 
   _panoramaStartX: 0,
@@ -14,6 +12,11 @@ Page({
 
   onLoad: function() {
     getApp().globalData.currentTab = 1
+    var that = this
+    dataService.getBrand(function(brand) {
+      if (!brand) return
+      that.setData({ brand: brand })
+    })
   },
 
   onShow: function() {
@@ -27,43 +30,30 @@ Page({
     if (index === this.data.currentPanoramaIndex) return
     this.setData({
       currentPanoramaIndex: index,
-      currentPanorama: this.data.brand.panoramas[index],
-      panoramaOffsetX: 0,
-      panoramaDragged: false
+      showHint: true
     })
   },
 
   onPanoramaTouchStart: function(e) {
     this._panoramaStartX = e.touches[0].clientX
     this._panoramaStartOffsetX = this.data.panoramaOffsetX
+    this.setData({ panoramaDragged: true })
   },
 
   onPanoramaTouchMove: function(e) {
     var deltaX = e.touches[0].clientX - this._panoramaStartX
-    // rpx 转换: 750rpx = 屏幕宽度, 所以 1px = 750/屏幕宽度 rpx
-    // 用 wx.getSystemInfoSync 获取屏幕宽度来换算
     var sysInfo = wx.getSystemInfoSync()
     var pxToRpx = 750 / sysInfo.windowWidth
     var newOffsetX = this._panoramaStartOffsetX + deltaX * pxToRpx
-
-    // 图片宽度 200%, 可偏移范围: [-750, 0] (即 -屏幕宽度rpx 到 0)
     var minOffset = -750
     var maxOffset = 0
-
-    // 循环: 超出范围时跳回，实现无缝旋转
     if (newOffsetX > maxOffset) {
       newOffsetX = newOffsetX + minOffset
     } else if (newOffsetX < minOffset) {
       newOffsetX = newOffsetX - minOffset
     }
-
-    this.setData({
-      panoramaOffsetX: newOffsetX,
-      panoramaDragged: true
-    })
+    this.setData({ panoramaOffsetX: newOffsetX })
   },
 
-  onPanoramaTouchEnd: function() {
-    // 可在此添加惯性动画，目前简化处理
-  }
+  onPanoramaTouchEnd: function() {}
 })

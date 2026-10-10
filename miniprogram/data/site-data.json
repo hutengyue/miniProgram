@@ -1,0 +1,227 @@
+{
+  "brand": {
+    "slogan": "设计师品牌·定制卫浴",
+    "brandName": "LORBN劳宾",
+    "heroImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+    "brandImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+    "about": {
+      "title": "探索美好秩序",
+      "subtitle": "EXPLORE THE BEAUTIFUL ORDER",
+      "description": [
+        "探索，是极致造物的偏执",
+        "秩序，是世间美好的真相"
+      ],
+      "philosophy": [
+        "探索非凡、建立秩序",
+        "对抗庸常、拒绝混乱"
+      ],
+      "closing": [
+        "设计有了秩序，精确不冗余，于是产生了美",
+        "生活有了秩序，从容不慌张，便遇见了美好"
+      ]
+    },
+    "panoramas": [
+      {
+        "id": 1,
+        "name": "展厅全景",
+        "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=equirectangular%20panorama%20360%20degree%20interior%20luxury%20bathroom%20showroom%20wide%20angle%20spherical%20projection%20marble%20elegant&image_size=landscape_16_9",
+        "thumb": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=luxury%20bathroom%20showroom%20interior%20thumbnail&image_size=square_hd"
+      },
+      {
+        "id": 2,
+        "name": "浴室全景",
+        "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=equirectangular%20panorama%20360%20degree%20modern%20bathroom%20bathtub%20marble%20floor%20ambient%20warm%20lighting%20spherical&image_size=landscape_16_9",
+        "thumb": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20luxury%20bathroom%20bathtub%20interior%20thumbnail&image_size=square_hd"
+      },
+      {
+        "id": 3,
+        "name": "工坊全景",
+        "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=equirectangular%20panorama%20360%20degree%20craftsman%20workshop%20handmade%20ceramics%20natural%20light%20artisan%20spherical&image_size=landscape_16_9",
+        "thumb": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=craftsman%20workshop%20ceramics%20interior%20thumbnail&image_size=square_hd"
+      }
+    ]
+  },
+  "products": {
+    "categories": [
+      {
+        "id": "yuexiang",
+        "name": "月相大师",
+        "expanded": true,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1200&q=80",
+        "products": [
+          { "id": "kl822190", "name": "KL822190*240", "image": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80" },
+          { "id": "kl822186", "name": "KL822186", "image": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80" },
+          { "id": "kl822184", "name": "KL822184", "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80" },
+          { "id": "kl822182", "name": "KL822182", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
+        ]
+      },
+      {
+        "id": "all",
+        "name": "全卫产品",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+        "products": [
+          { "id": "p-001", "name": "浴室柜套装", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
+          { "id": "p-002", "name": "智能马桶", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
+          { "id": "p-003", "name": "淋浴房", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" },
+          { "id": "p-004", "name": "花洒龙头", "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80" }
+        ]
+      },
+      {
+        "id": "cabinet",
+        "name": "浴室柜",
+        "expanded": false,
+        "hasSub": true,
+        "subCategories": [
+          {
+            "id": "cab-light",
+            "name": "轻奢主义",
+            "bannerImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+            "products": [
+              { "id": "cl-01", "name": "轻奢浴室柜 A", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
+              { "id": "cl-02", "name": "轻奢浴室柜 B", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" }
+            ]
+          },
+          {
+            "id": "cab-modern",
+            "name": "现代简约",
+            "bannerImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&q=80",
+            "products": [
+              { "id": "cm-01", "name": "简约浴室柜 A", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
+              { "id": "cm-02", "name": "简约浴室柜 B", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" }
+            ]
+          },
+          {
+            "id": "cab-chinese",
+            "name": "轻中式",
+            "bannerImage": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=1200&q=80",
+            "products": [
+              { "id": "cc-01", "name": "中式浴室柜 A", "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80" },
+              { "id": "cc-02", "name": "中式浴室柜 B", "image": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80" }
+            ]
+          },
+          {
+            "id": "cab-home",
+            "name": "家装产品",
+            "bannerImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+            "products": [
+              { "id": "ch-01", "name": "家装浴室柜 A", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" },
+              { "id": "ch-02", "name": "家装浴室柜 B", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
+            ]
+          },
+          {
+            "id": "cab-whole",
+            "name": "全域融合",
+            "bannerImage": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80",
+            "products": [
+              { "id": "cw-01", "name": "全域浴室柜 A", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
+              { "id": "cw-02", "name": "全域浴室柜 B", "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80" }
+            ]
+          }
+        ],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "shower",
+        "name": "淋浴房",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+        "products": [
+          { "id": "shw-01", "name": "一字型淋浴房", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" },
+          { "id": "shw-02", "name": "弧形淋浴房", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
+        ]
+      },
+      {
+        "id": "smart",
+        "name": "智能卫浴",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80",
+        "products": [
+          { "id": "sm-01", "name": "智能马桶", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
+          { "id": "sm-02", "name": "智能浴缸", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" }
+        ]
+      },
+      {
+        "id": "hardware",
+        "name": "卫浴五金",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=1200&q=80",
+        "products": [
+          { "id": "hw-01", "name": "龙头套装", "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80" },
+          { "id": "hw-02", "name": "花洒套装", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" }
+        ]
+      },
+      {
+        "id": "parts",
+        "name": "五金配件",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "ceramic",
+        "name": "陶瓷套件",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "custom-wood",
+        "name": "定制板材",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "custom-stone",
+        "name": "定制石材",
+        "expanded": false,
+        "hasSub": false,
+        "subCategories": [],
+        "bannerImage": "",
+        "products": []
+      }
+    ]
+  },
+  "cases": {
+    "categories": [
+      { "id": "all", "name": "全部" },
+      { "id": "heritage", "name": "藏品系列实景" },
+      { "id": "classic", "name": "经典系列实景" },
+      { "id": "vogue", "name": "风尚系列实景" }
+    ],
+    "list": [
+      { "id": "lb-1-73", "name": "剪影II", "code": "LB-1-73", "category": "heritage", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" },
+      { "id": "mg-06", "name": "宫阙", "code": "MG-06", "category": "heritage", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" },
+      { "id": "cl-2-01", "name": "云栖", "code": "CL-2-01", "category": "classic", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
+      { "id": "cl-2-02", "name": "星轨", "code": "CL-2-02", "category": "classic", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
+      { "id": "vg-1-01", "name": "朝露", "code": "VG-1-01", "category": "vogue", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
+      { "id": "vg-1-02", "name": "暮雪", "code": "VG-1-02", "category": "vogue", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" }
+    ]
+  },
+  "stores": {
+    "list": [
+      { "id": "shanghai", "city": "上海", "cityEn": "SHANGHAI", "address": "上海市浦东新区临御路518号红星美凯龙1楼劳宾 A8126展位", "hours": "周一至周五10:00-18:00 周末10:00-20:00" },
+      { "id": "yongkang", "city": "永康", "cityEn": "YONGKANG", "address": "浙江省金华市永康市西站国际装饰城B区11号德国高仪", "hours": "周一至周日09:30-18:00" },
+      { "id": "jinhua", "city": "金华", "cityEn": "JINHUA", "address": "浙江省金华市金东区浙中建材市场A座南一层一号门", "hours": "周一至周日09:30-18:00" },
+      { "id": "lishui", "city": "丽水", "cityEn": "LISHUI", "address": "浙江省丽水市莲都区浙南国际建材市场E4区一楼法恩莎卫浴旗舰店", "hours": "周一至周日09:30-18:00" }
+    ]
+  }
+}

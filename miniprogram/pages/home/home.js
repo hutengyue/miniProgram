@@ -1,16 +1,18 @@
-var brandData = require('../../data/brand.js')
+var dataService = require('../../data/data-service.js')
 
 Page({
   data: {
-    brand: brandData,
+    brand: {},
     statusBarHeight: 20
   },
 
   onLoad: function() {
     getApp().globalData.currentTab = 0
+    var that = this
     var sysInfo = wx.getSystemInfoSync()
-    this.setData({
-      statusBarHeight: sysInfo.statusBarHeight || 20
+    that.setData({ statusBarHeight: sysInfo.statusBarHeight || 20 })
+    dataService.getBrand(function(brand) {
+      if (brand) that.setData({ brand: brand })
     })
   },
 

@@ -1,4 +1,4 @@
-var productsData = require('../../data/products.js')
+var dataService = require('../../data/data-service.js')
 
 Page({
   data: {
@@ -12,13 +12,17 @@ Page({
 
   onLoad: function() {
     getApp().globalData.currentTab = 2
-    var categories = productsData.categories
-    var sections = this.buildSections(categories)
-    var firstSection = sections[0]
-    this.setData({
-      categories: categories,
-      sections: sections,
-      activeSectionId: firstSection ? firstSection.id : ''
+    var that = this
+    dataService.getProducts(function(products) {
+      if (!products) return
+      var categories = products.categories
+      var sections = that.buildSections(categories)
+      var firstSection = sections[0]
+      that.setData({
+        categories: categories,
+        sections: sections,
+        activeSectionId: firstSection ? firstSection.id : ''
+      })
     })
   },
 

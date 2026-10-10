@@ -1,4 +1,4 @@
-var storesData = require('../../data/stores.js')
+var dataService = require('../../data/data-service.js')
 
 Page({
   data: {
@@ -8,10 +8,14 @@ Page({
 
   onLoad: function() {
     getApp().globalData.currentTab = 4
-    this.setData({
-      filteredStores: storesData.stores
+    var that = this
+    dataService.getStores(function(stores) {
+      if (!stores) return
+      that.setData({
+        filteredStores: stores.list
+      })
+      that._allStores = stores.list
     })
-    this._allStores = storesData.stores
   },
 
   onShow: function() {

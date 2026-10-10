@@ -1,4 +1,4 @@
-var casesData = require('../../data/cases.js')
+var dataService = require('../../data/data-service.js')
 
 Page({
   data: {
@@ -10,11 +10,15 @@ Page({
 
   onLoad: function() {
     getApp().globalData.currentTab = 3
-    this.setData({
-      categories: casesData.categories,
-      filteredCases: casesData.cases
+    var that = this
+    dataService.getCases(function(cases) {
+      if (!cases) return
+      that.setData({
+        categories: cases.categories,
+        filteredCases: cases.list
+      })
+      that._allCases = cases.list
     })
-    this._allCases = casesData.cases
   },
 
   onShow: function() {
