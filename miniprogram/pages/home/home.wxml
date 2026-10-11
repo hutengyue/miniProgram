@@ -1,14 +1,35 @@
 <view class="home-page">
-  <swiper class="home-swiper" vertical="{{true}}" autoplay="{{false}}" circular="{{false}}" indicator-dots="{{false}}" duration="{{400}}">
+  <view class="top-bar" style="padding-top: {{statusBarHeight}}px;">
+    <view class="top-bar-center">
+      <text class="top-bar-logo">{{brand.brandName}}</text>
+    </view>
+  </view>
+
+  <swiper class="home-swiper" vertical="{{true}}" autoplay="{{false}}" circular="{{false}}" indicator-dots="{{false}}" duration="{{400}}" bindchange="onSwiperChange">
     <swiper-item class="swiper-item">
-      <view class="slide slide-hero">
-        <image class="slide-bg" src="{{brand.heroImage}}" mode="aspectFill"></image>
+      <view class="slide slide-video">
+        <video
+          class="slide-video-bg"
+          src="{{heroVideoUrl}}"
+          autoplay="{{true}}"
+          muted="{{true}}"
+          loop="{{true}}"
+          show-center-play-btn="{{false}}"
+          show-play-btn="{{false}}"
+          show-fullscreen-btn="{{false}}"
+          show-progress="{{false}}"
+          enable-progress-gesture="{{false}}"
+          object-fit="cover"></video>
         <view class="slide-overlay"></view>
-        <view class="slide-content" style="padding-top: {{statusBarHeight + 44}}px;">
-          <view class="brand-area">
-            <view class="brand-name">{{brand.brandName}}</view>
-            <view class="brand-divider"></view>
-            <view class="brand-slogan">{{brand.slogan}}</view>
+        <view class="slide-content">
+          <view class="video-hero-text">
+            <view class="hero-title">定制家的气质</view>
+            <view class="hero-subtitle">Customize the temperament of home</view>
+          </view>
+          <view class="cta-wrapper">
+            <view class="cta-btn" bindtap="onExplore" hover-class="cta-hover">
+              <text class="cta-text">即刻探索</text>
+            </view>
           </view>
           <view class="scroll-hint">
             <view class="scroll-arrow"></view>

@@ -7,6 +7,11 @@
   padding-bottom: env(safe-area-inset-bottom);
   background-color: #0A0A0A;
   z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.tab-bar.tab-bar-transparent {
+  background-color: transparent;
 }
 
 .tab-bar-border {
@@ -16,6 +21,10 @@
   right: 0;
   height: 1rpx;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.tab-bar-transparent .tab-bar-border {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .tab-bar-inner {

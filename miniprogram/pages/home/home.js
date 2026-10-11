@@ -3,7 +3,9 @@ var dataService = require('../../data/data-service.js')
 Page({
   data: {
     brand: {},
-    statusBarHeight: 20
+    statusBarHeight: 20,
+    swiperIndex: 0,
+    heroVideoUrl: '/assets/video/hero.mp4'
   },
 
   onLoad: function() {
@@ -18,7 +20,18 @@ Page({
 
   onShow: function() {
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({ selected: 0 })
+      this.getTabBar().setData({
+        selected: 0,
+        transparent: this.data.swiperIndex === 0
+      })
+    }
+  },
+
+  onSwiperChange: function(e) {
+    var index = e.detail.current
+    this.setData({ swiperIndex: index })
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ transparent: index === 0 })
     }
   },
 

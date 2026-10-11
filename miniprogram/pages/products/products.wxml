@@ -1,14 +1,19 @@
 <view class="products-page">
-  <view class="search-bar">
-    <view class="search-input-wrap">
-      <van-icon name="search" class="search-icon" />
-      <input class="search-input" placeholder="搜索关键词" placeholder-class="search-placeholder" value="{{searchKeyword}}" bindinput="onSearchInput" confirm-type="search" bindconfirm="onSearch" />
+  <view class="search-section">
+    <view class="search-box">
+      <input class="search-input" placeholder="请输入产品关键词" placeholder-class="search-placeholder" value="{{searchKeyword}}" bindinput="onSearchInput" confirm-type="search" />
+      <view wx:if="{{searchKeyword}}" class="search-clear" bindtap="onClearSearch">
+        <view class="clear-line clear-line-left"></view>
+        <view class="clear-line clear-line-right"></view>
+      </view>
+      <view class="search-icon-btn" bindtap="onSearch">
+        <image class="search-icon-img" src="/images/search.png" mode="aspectFit"></image>
+      </view>
     </view>
-    <view class="search-btn" bindtap="onSearch">搜索</view>
   </view>
 
   <view class="products-body">
-    <scroll-view class="category-nav" scroll-y>
+    <scroll-view class="category-nav" scroll-y enhanced show-scrollbar="{{false}}">
       <block wx:for="{{categories}}" wx:key="id">
         <view class="category-major {{activeSectionId === item.id && !item.hasSub ? 'cat-active' : ''}}" data-id="{{item.id}}" bindtap="onToggleCategory">
           <text class="cat-name">{{item.name}}</text>
@@ -23,7 +28,7 @@
       <view class="nav-bottom-space"></view>
     </scroll-view>
 
-    <scroll-view class="content-area" scroll-y scroll-into-view="{{scrollToId}}" scroll-with-animation bindscroll="onContentScroll">
+    <scroll-view class="content-area" scroll-y enhanced show-scrollbar="{{false}}" scroll-into-view="{{scrollToId}}" scroll-with-animation bindscroll="onContentScroll">
       <view class="section" id="sec-{{item.id}}" wx:for="{{sections}}" wx:key="id">
         <view class="banner-wrap" wx:if="{{item.bannerImage}}">
           <image class="banner-img" src="{{item.bannerImage}}" mode="aspectFill"></image>

@@ -151,6 +151,10 @@ Page({
     this.setData({ searchKeyword: e.detail.value })
   },
 
+  onClearSearch: function() {
+    this.setData({ searchKeyword: '' })
+  },
+
   onSearch: function() {
     var kw = this.data.searchKeyword.trim()
     if (!kw) {

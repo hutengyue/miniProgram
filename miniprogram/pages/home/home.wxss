@@ -5,6 +5,55 @@
   background-color: #0A0A0A;
 }
 
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 88rpx;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.top-bar-left {
+  width: 80rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar-icon {
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+
+.top-bar-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar-logo {
+  font-size: 32rpx;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+}
+
+.top-bar-right {
+  width: 80rpx;
+}
+
 .home-swiper {
   width: 100%;
   height: 100%;
@@ -20,6 +69,15 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+.slide-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .slide-bg {
@@ -40,8 +98,8 @@
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(10, 10, 10, 0.6) 0%,
-    rgba(10, 10, 10, 0.3) 40%,
+    rgba(10, 10, 10, 0.4) 0%,
+    rgba(10, 10, 10, 0.2) 40%,
     rgba(10, 10, 10, 0.5) 70%,
     rgba(10, 10, 10, 0.9) 100%
   );
@@ -63,10 +121,33 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 0 48rpx 220rpx;
+  padding: 180rpx 48rpx 220rpx;
 }
 
-/* Slide 1 - Hero */
+.video-hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200rpx;
+}
+
+.hero-title {
+  font-size: 52rpx;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 6rpx;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 3rpx;
+  text-align: center;
+  margin-top: 24rpx;
+  font-weight: 300;
+}
+
 .slide-hero .brand-area {
   display: flex;
   flex-direction: column;
@@ -97,7 +178,6 @@
   font-weight: 300;
 }
 
-/* Slide 2 - Philosophy */
 .slide-philosophy {
   background: #0A0A0A;
 }
@@ -160,7 +240,6 @@
   margin-bottom: 16rpx;
 }
 
-/* Slide 3 - CTA */
 .cta-section {
   display: flex;
   flex-direction: column;
@@ -187,6 +266,7 @@
 .cta-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 40rpx;
 }
 
 .cta-btn {
@@ -212,17 +292,17 @@
   font-weight: 300;
 }
 
-/* Scroll hint */
 .scroll-hint {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20rpx;
 }
 
 .scroll-arrow {
   width: 20rpx;
   height: 20rpx;
-  border-right: 2rpx solid rgba(255, 255, 255, 0.4);
-  border-bottom: 2rpx solid rgba(255, 255, 255, 0.4);
+  border-right: 2rpx solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.5);
   transform: rotate(45deg);
 }

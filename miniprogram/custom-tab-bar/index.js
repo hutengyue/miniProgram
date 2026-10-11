@@ -1,6 +1,7 @@
 Component({
   data: {
     selected: 0,
+    transparent: false,
     list: [
       { pagePath: '/pages/home/home', text: '首页' },
       { pagePath: '/pages/brand/brand', text: '品牌' },
