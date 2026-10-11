@@ -1,4 +1,3 @@
-// 数据服务：统一入口，从阿里云 OSS 远程加载 JSON
 var REMOTE_URL = 'https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/site-data.json'
 
 var _cache = null
@@ -23,7 +22,6 @@ function fetchData(callback) {
   })
 }
 
-// 按模块获取
 function getBrand(callback) {
   fetchData(function (data) {
     callback(data ? data.brand : null)

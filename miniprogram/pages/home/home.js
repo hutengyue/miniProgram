@@ -5,7 +5,7 @@ Page({
     brand: {},
     statusBarHeight: 20,
     swiperIndex: 0,
-    heroVideoUrl: '/assets/video/hero.mp4'
+    heroVideoUrl: ''
   },
 
   onLoad: function() {
@@ -14,7 +14,12 @@ Page({
     var sysInfo = wx.getSystemInfoSync()
     that.setData({ statusBarHeight: sysInfo.statusBarHeight || 20 })
     dataService.getBrand(function(brand) {
-      if (brand) that.setData({ brand: brand })
+      if (brand) {
+        that.setData({
+          brand: brand,
+          heroVideoUrl: brand.heroVideo || ''
+        })
+      }
     })
   },
 
