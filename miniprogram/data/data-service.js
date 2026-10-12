@@ -1,19 +1,14 @@
+// 数据服务：统一入口，从阿里云 OSS 远程加载 JSON
 var REMOTE_URL = 'https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/site-data.json'
 
-var _cache = null
-
 function fetchData(callback) {
-  if (_cache) {
-    callback(_cache)
-    return
-  }
+  // 每次都带时间戳绕过 CDN 缓存，确保拿到最新数据
   wx.request({
-    url: REMOTE_URL,
+    url: REMOTE_URL + '?t=' + Date.now(),
     method: 'GET',
     dataType: 'json',
     success: function (res) {
-      _cache = res.data
-      callback(_cache)
+      callback(res.data)
     },
     fail: function (err) {
       console.error('远程数据加载失败', err)
