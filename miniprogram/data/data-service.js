@@ -41,10 +41,17 @@ function getStores(callback) {
   })
 }
 
+function getHomeSlides(callback) {
+  fetchData(function (data) {
+    callback(data ? data.homeSlides : null)
+  })
+}
+
 module.exports = {
   fetchData: fetchData,
   getBrand: getBrand,
   getProducts: getProducts,
   getCases: getCases,
-  getStores: getStores
+  getStores: getStores,
+  getHomeSlides: getHomeSlides
 }

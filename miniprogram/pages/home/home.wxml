@@ -6,11 +6,12 @@
   </view>
 
   <swiper class="home-swiper" vertical="{{true}}" autoplay="{{false}}" circular="{{false}}" indicator-dots="{{false}}" duration="{{400}}" bindchange="onSwiperChange">
-    <swiper-item class="swiper-item">
-      <view class="slide slide-video">
+    <swiper-item class="swiper-item" wx:for="{{slides}}" wx:key="id">
+      <view class="slide">
         <video
+          wx:if="{{item.video}}"
           class="slide-video-bg"
-          src="{{heroVideoUrl}}"
+          src="{{item.video}}"
           autoplay="{{true}}"
           muted="{{true}}"
           loop="{{true}}"
@@ -20,61 +21,23 @@
           show-progress="{{false}}"
           enable-progress-gesture="{{false}}"
           object-fit="cover"></video>
+        <image wx:else class="slide-bg" src="{{item.image}}" mode="aspectFill"></image>
         <view class="slide-overlay"></view>
         <view class="slide-content">
-          <view class="video-hero-text">
-            <view class="hero-title">定制家的气质</view>
-            <view class="hero-subtitle">Customize the temperament of home</view>
+          <view class="hero-text">
+            <view class="hero-title">{{item.title}}</view>
+            <view class="hero-subtitle">{{item.subtitle}}</view>
+            <view class="hero-desc" wx:if="{{item.desc && item.desc.length}}">
+              <view class="hero-desc-line" wx:for="{{item.desc}}" wx:for-item="line" wx:key="*this">{{line}}</view>
+            </view>
           </view>
           <view class="cta-wrapper">
-            <view class="cta-btn" bindtap="onExplore" hover-class="cta-hover">
-              <text class="cta-text">即刻探索</text>
+            <view class="cta-btn" data-tab="{{item.tabPath}}" bindtap="onExplore" hover-class="cta-hover">
+              <text class="cta-text">{{item.buttonText}}</text>
             </view>
           </view>
           <view class="scroll-hint">
             <view class="scroll-arrow"></view>
-          </view>
-        </view>
-      </view>
-    </swiper-item>
-
-    <swiper-item class="swiper-item">
-      <view class="slide slide-philosophy">
-        <view class="slide-content" style="padding-top: {{statusBarHeight + 80}}px;">
-          <view class="philosophy-section">
-            <view class="philosophy-title">{{brand.about.title}}</view>
-            <view class="philosophy-subtitle">{{brand.about.subtitle}}</view>
-          </view>
-          <view class="philosophy-divider"></view>
-          <view class="philosophy-text">
-            <view class="philosophy-line" wx:for="{{brand.about.description}}" wx:key="index">{{item}}</view>
-          </view>
-          <view class="philosophy-sub">
-            <view class="philosophy-sub-item" wx:for="{{brand.about.philosophy}}" wx:key="index">{{item}}</view>
-          </view>
-          <view class="scroll-hint">
-            <view class="scroll-arrow"></view>
-          </view>
-        </view>
-      </view>
-    </swiper-item>
-
-    <swiper-item class="swiper-item">
-      <view class="slide slide-cta">
-        <image class="slide-bg" src="{{brand.brandImage}}" mode="aspectFill"></image>
-        <view class="slide-overlay dark"></view>
-        <view class="slide-content" style="padding-top: {{statusBarHeight + 44}}px;">
-          <view class="cta-section">
-            <view class="cta-title">探索美好秩序</view>
-            <view class="cta-desc">
-              <view>设计有了秩序，精确不冗余</view>
-              <view>生活有了秩序，从容不慌张</view>
-            </view>
-          </view>
-          <view class="cta-wrapper">
-            <view class="cta-btn" bindtap="onExplore" hover-class="cta-hover">
-              <text class="cta-text">即刻探索</text>
-            </view>
           </view>
         </view>
       </view>

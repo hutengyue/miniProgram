@@ -5,7 +5,7 @@ Page({
     brand: {},
     statusBarHeight: 20,
     swiperIndex: 0,
-    heroVideoUrl: ''
+    slides: []
   },
 
   onLoad: function() {
@@ -15,10 +15,12 @@ Page({
     that.setData({ statusBarHeight: sysInfo.statusBarHeight || 20 })
     dataService.getBrand(function(brand) {
       if (brand) {
-        that.setData({
-          brand: brand,
-          heroVideoUrl: brand.heroVideo || ''
-        })
+        that.setData({ brand: brand })
+      }
+    })
+    dataService.getHomeSlides(function(slides) {
+      if (slides && slides.length) {
+        that.setData({ slides: slides })
       }
     })
   },
@@ -40,9 +42,10 @@ Page({
     }
   },
 
-  onExplore: function() {
-    wx.switchTab({
-      url: '/pages/brand/brand'
-    })
+  onExplore: function(e) {
+    var url = e.currentTarget.dataset.tab
+    if (url) {
+      wx.switchTab({ url: url })
+    }
   }
 })

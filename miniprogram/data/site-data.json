@@ -224,5 +224,44 @@
       { "id": "jinhua", "city": "金华", "cityEn": "JINHUA", "address": "浙江省金华市金东区浙中建材市场A座南一层一号门", "hours": "周一至周日09:30-18:00" },
       { "id": "lishui", "city": "丽水", "cityEn": "LISHUI", "address": "浙江省丽水市莲都区浙南国际建材市场E4区一楼法恩莎卫浴旗舰店", "hours": "周一至周日09:30-18:00" }
     ]
-  }
+  },
+  "homeSlides": [
+    {
+      "id": "brand",
+      "video": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4",
+      "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+      "title": "定制家的气质",
+      "subtitle": "Customize the temperament of home",
+      "desc": [],
+      "buttonText": "即刻探索",
+      "tabPath": "/pages/brand/brand"
+    },
+    {
+      "id": "products",
+      "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+      "title": "精工造物之美",
+      "subtitle": "The Beauty of Craftsmanship",
+      "desc": ["设计有了秩序，精确不冗余", "生活有了秩序，从容不慌张"],
+      "buttonText": "即刻探索",
+      "tabPath": "/pages/products/products"
+    },
+    {
+      "id": "cases",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+      "title": "美好秩序的见证",
+      "subtitle": "Witness the Beautiful Order",
+      "desc": ["每一个真实的空间", "都是设计秩序的延续"],
+      "buttonText": "即刻探索",
+      "tabPath": "/pages/cases/cases"
+    },
+    {
+      "id": "stores",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
+      "title": "期待与您相遇",
+      "subtitle": "Visit Our Showroom",
+      "desc": ["走进门店，亲身体验", "定制卫浴的美好秩序"],
+      "buttonText": "即刻探索",
+      "tabPath": "/pages/stores/stores"
+    }
+  ]
 }
