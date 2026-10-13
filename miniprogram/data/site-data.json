@@ -44,7 +44,7 @@
           "产品线跨越全屋定制卫浴，涵盖浴室柜、智能马桶、淋浴房、龙头五金等多个品类。",
           "始终坚信简约不简单，通过德系精工标准与东方审美融合，为全球用户带来品质家居体验。"
         ],
-        "image": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=1200&q=80"
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
       },
       {
         "type": "section",
@@ -121,8 +121,8 @@
         "subCategories": [],
         "bannerImage": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1200&q=80",
         "products": [
-          { "id": "kl822190", "name": "KL822190*240", "image": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80" },
-          { "id": "kl822186", "name": "KL822186", "image": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80" },
+          { "id": "kl822190", "name": "KL822190*240", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80" },
+          { "id": "kl822186", "name": "KL822186", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80" },
           { "id": "kl822184", "name": "KL822184", "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80" },
           { "id": "kl822182", "name": "KL822182", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
         ]
@@ -138,7 +138,7 @@
           { "id": "p-001", "name": "浴室柜套装", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
           { "id": "p-002", "name": "智能马桶", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
           { "id": "p-003", "name": "淋浴房", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" },
-          { "id": "p-004", "name": "花洒龙头", "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80" }
+          { "id": "p-004", "name": "花洒龙头", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" }
         ]
       },
       {

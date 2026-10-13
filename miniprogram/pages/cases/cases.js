@@ -67,10 +67,14 @@ Page({
   },
 
   onClearSearch: function() {
+    var activeCategory = this.data.activeCategory
+    var filtered = this._allCases
+    if (activeCategory !== 'all') {
+      filtered = filtered.filter(function(c) { return c.category === activeCategory })
+    }
     this.setData({
       searchKeyword: '',
-      activeCategory: 'all',
-      filteredCases: this._allCases
+      filteredCases: filtered
     })
   },
 

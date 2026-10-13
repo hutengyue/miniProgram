@@ -20,6 +20,8 @@ Page({
       if (!products) return
       var categories = products.categories
       var sections = that.buildSections(categories)
+      // 保存原始数据用于搜索过滤
+      that._allSections = JSON.parse(JSON.stringify(sections))
       var firstSection = sections[0]
       that.setData({
         categories: categories,
@@ -55,6 +57,36 @@ Page({
       }
     }
     return sections
+  },
+
+  filterSections: function(keyword) {
+    var kw = keyword ? keyword.trim() : ''
+    var all = this._allSections
+    if (!kw) return all
+    var lower = kw.toLowerCase()
+    var result = []
+    for (var i = 0; i < all.length; i++) {
+      var sec = all[i]
+      // 分类名命中 → 整个 section 保留
+      if (sec.name.toLowerCase().indexOf(lower) > -1) {
+        result.push(sec)
+        continue
+      }
+      // 产品名命中 → 只保留命中的产品
+      var matchedProducts = []
+      for (var j = 0; j < sec.products.length; j++) {
+        var p = sec.products[j]
+        if (p.name.toLowerCase().indexOf(lower) > -1 || (p.id && p.id.toLowerCase().indexOf(lower) > -1)) {
+          matchedProducts.push(p)
+        }
+      }
+      if (matchedProducts.length > 0) {
+        var copy = JSON.parse(JSON.stringify(sec))
+        copy.products = matchedProducts
+        result.push(copy)
+      }
+    }
+    return result
   },
 
   onShow: function() {
@@ -151,20 +183,24 @@ Page({
   },
 
   onSearchInput: function(e) {
-    this.setData({ searchKeyword: e.detail.value })
+    var keyword = e.detail.value
+    var sections = this.filterSections(keyword)
+    this.setData({
+      searchKeyword: keyword,
+      sections: sections
+    })
   },
 
   onClearSearch: function() {
-    this.setData({ searchKeyword: '' })
+    var sections = this.filterSections('')
+    this.setData({
+      searchKeyword: '',
+      sections: sections
+    })
   },
 
   onSearch: function() {
-    var kw = this.data.searchKeyword.trim()
-    if (!kw) {
-      wx.showToast({ title: '请输入关键词', icon: 'none' })
-      return
-    }
-    wx.showToast({ title: '搜索: ' + kw, icon: 'none' })
+    // 实时搜索已在 onSearchInput 处理，这里无需额外逻辑
   },
 
   onProductTap: function(e) {

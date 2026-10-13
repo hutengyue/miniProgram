@@ -5,5 +5,8 @@
   "navigationBarTextStyle": "white",
   "backgroundColor": "#FFFFFF",
   "enableShareAppMessage": true,
-  "enableShareTimeline": true
+  "enableShareTimeline": true,
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  }
 }

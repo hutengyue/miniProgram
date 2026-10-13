@@ -6,13 +6,6 @@
       <!-- Hero 首图 -->
       <view wx:if="{{sec.type === 'hero'}}" class="sec sec-hero">
         <image class="hero-bg {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="aspectFill" bindload="onImgLoad" binderror="onImgError" data-src="{{sec.image}}"></image>
-        <view class="hero-overlay"></view>
-        <view class="hero-name">{{sec.nameEn}}</view>
-        <view class="hero-mono">
-          <view class="hero-mono-line"></view>
-          <view class="hero-mono-text">SINCE 2013</view>
-          <view class="hero-mono-line"></view>
-        </view>
       </view>
 
       <!-- Quote 金句 -->
@@ -40,7 +33,7 @@
       <!-- Section 通用 (标题+正文/时间轴+可选图) -->
       <view wx:elif="{{sec.type === 'section'}}" class="sec sec-section">
         <view class="sec-header">
-          <view class="sec-num">0{{index + 1}}</view>
+          <view class="sec-num">0{{sec.num}}</view>
           <view class="sec-title">{{sec.title}}</view>
           <view class="sec-subtitle">{{sec.subtitle}}</view>
           <view class="sec-line"></view>
@@ -77,13 +70,15 @@
         </view>
 
         <!-- 微信二维码图 -->
-        <image class="contact-qr {{loadedImages[brand.wechatQr] ? 'img-loaded' : ''}}" src="{{brand.wechatQr}}" mode="widthFix"
-          show-menu-by-longpress="{{true}}" bindload="onImgLoad" binderror="onImgError" data-src="{{brand.wechatQr}}"></image>
+        <view class="contact-qr-wrap">
+          <image class="contact-qr {{loadedImages[brand.wechatQr] ? 'img-loaded' : ''}}" src="{{brand.wechatQr}}" mode="widthFix"
+            show-menu-by-longpress="{{true}}" bindload="onImgLoad" binderror="onImgError" data-src="{{brand.wechatQr}}"></image>
+        </view>
 
         <!-- 电话 -->
         <view class="contact-phone">
           <view class="contact-phone-num">{{sec.phone}}</view>
-          <view class="contact-call-btn" bindtap="onCallPhone" data-phone="{{sec.phone}}">拨打</view>
+          <van-icon name="phone" class="contact-call-icon" bindtap="onCallPhone" data-phone="{{sec.phone}}"></van-icon>
         </view>
       </view>
 

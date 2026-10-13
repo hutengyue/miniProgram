@@ -13,6 +13,15 @@ Page({
     var that = this
     dataService.getBrand(function(brand) {
       if (!brand) return
+      // 给 type: 'section' 的条目注入连续编号（从 1 开始），跳过 hero/quote/text/image 等
+      var num = 0
+      var sections = brand.sections || []
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].type === 'section') {
+          num++
+          sections[i].num = num
+        }
+      }
       that.setData({ brand: brand })
     })
   },
