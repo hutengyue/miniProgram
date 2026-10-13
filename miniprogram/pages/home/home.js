@@ -29,7 +29,7 @@ Page({
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().setData({
         selected: 0,
-        transparent: this.data.swiperIndex === 0
+        transparent: true
       })
     }
   },
@@ -37,15 +37,26 @@ Page({
   onSwiperChange: function(e) {
     var index = e.detail.current
     this.setData({ swiperIndex: index })
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({ transparent: index === 0 })
-    }
+    // 首页全程沉浸式，始终透明
   },
 
   onExplore: function(e) {
     var url = e.currentTarget.dataset.tab
     if (url) {
       wx.switchTab({ url: url })
+    }
+  },
+
+  onShareAppMessage: function() {
+    return {
+      title: 'LORBN劳宾 · 设计师品牌·定制卫浴',
+      path: '/pages/home/home'
+    }
+  },
+
+  onShareTimeline: function() {
+    return {
+      title: 'LORBN劳宾 · 设计师品牌·定制卫浴'
     }
   }
 })

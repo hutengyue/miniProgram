@@ -1,27 +1,114 @@
-<view class="panorama-page">
-  <canvas type="2d" id="panoramaCanvas" class="panorama-canvas"
-    bindtouchstart="onPanoramaTouchStart"
-    bindtouchmove="onPanoramaTouchMove"
-    bindtouchend="onPanoramaTouchEnd"></canvas>
+<view class="brand-page">
+  <scroll-view class="brand-scroll" scroll-y enhanced="{{true}}" show-scrollbar="{{false}}">
 
-  <view class="panorama-overlay-top">
-    <view class="panorama-brand">{{brand.brandName}}</view>
-    <view class="panorama-slogan">{{brand.slogan}}</view>
-  </view>
+    <block wx:for="{{brand.sections}}" wx:key="index" wx:for-item="sec">
 
-  <view class="panorama-hint" wx:if="{{showHint}}">
-    <text class="panorama-hint-text">拖拽旋转 · 360°全景</text>
-  </view>
-
-  <view class="panorama-switcher">
-    <view class="panorama-switcher-inner">
-      <view class="panorama-thumb {{currentPanoramaIndex === index ? 'panorama-thumb-active' : ''}}"
-        wx:for="{{brand.panoramas}}" wx:key="id"
-        data-index="{{index}}"
-        bindtap="onSwitchPanorama">
-        <image class="panorama-thumb-img" src="{{item.thumb}}" mode="aspectFill"></image>
-        <text class="panorama-thumb-name">{{item.name}}</text>
+      <!-- Hero 首图 -->
+      <view wx:if="{{sec.type === 'hero'}}" class="sec sec-hero">
+        <image class="hero-bg" src="{{sec.image}}" mode="aspectFill"></image>
+        <view class="hero-overlay"></view>
+        <view class="hero-name">{{sec.nameEn}}</view>
+        <view class="hero-mono">
+          <view class="hero-mono-line"></view>
+          <view class="hero-mono-text">SINCE 2013</view>
+          <view class="hero-mono-line"></view>
+        </view>
       </view>
-    </view>
-  </view>
+
+      <!-- Quote 金句 -->
+      <view wx:elif="{{sec.type === 'quote'}}" class="sec sec-quote">
+        <view class="quote-title">{{sec.title}}</view>
+        <view class="quote-subtitle">{{sec.subtitle}}</view>
+        <view class="quote-divider"></view>
+        <view class="quote-lines">
+          <view class="quote-line" wx:for="{{sec.lines}}" wx:key="*this">{{item}}</view>
+        </view>
+      </view>
+
+      <!-- Text 文字段落 -->
+      <view wx:elif="{{sec.type === 'text'}}" class="sec sec-text">
+        <view class="text-para" wx:for="{{sec.paragraphs}}" wx:key="*this">{{item}}</view>
+        <view class="text-brand-line">{{sec.brandLine}}</view>
+        <view class="text-end-line">{{sec.endLine}}</view>
+      </view>
+
+      <!-- Image 全屏图（留呼吸感，窄边距 + 圆角） -->
+      <view wx:elif="{{sec.type === 'image'}}" class="sec sec-image">
+        <image class="full-img" src="{{sec.image}}" mode="widthFix"></image>
+      </view>
+
+      <!-- Section 通用 (标题+正文/时间轴+可选图) -->
+      <view wx:elif="{{sec.type === 'section'}}" class="sec sec-section">
+        <view class="sec-header">
+          <view class="sec-num">0{{index + 1}}</view>
+          <view class="sec-title">{{sec.title}}</view>
+          <view class="sec-subtitle">{{sec.subtitle}}</view>
+          <view class="sec-line"></view>
+        </view>
+
+        <!-- Timeline -->
+        <block wx:if="{{sec.timeline}}">
+          <view class="timeline">
+            <view class="timeline-item" wx:for="{{sec.timeline}}" wx:key="year" wx:for-item="tl">
+              <view class="tl-dot"></view>
+              <view class="tl-content">
+                <view class="tl-year">{{tl.year}}</view>
+                <view class="tl-text">{{tl.text}}</view>
+              </view>
+            </view>
+          </view>
+        </block>
+
+        <block wx:if="{{sec.paragraphs}}">
+          <view class="sec-paragraphs">
+            <view class="sec-para" wx:for="{{sec.paragraphs}}" wx:key="*this">{{item}}</view>
+          </view>
+        </block>
+
+        <image wx:if="{{sec.image}}" class="sec-img" src="{{sec.image}}" mode="widthFix"></image>
+      </view>
+
+      <!-- Contact 联系 -->
+      <view wx:elif="{{sec.type === 'contact'}}" class="sec sec-contact">
+        <view class="sec-header">
+          <view class="sec-title">{{sec.title}}</view>
+          <view class="sec-subtitle">{{sec.subtitle}}</view>
+          <view class="sec-line"></view>
+        </view>
+
+        <!-- 微信二维码图 -->
+        <image class="contact-qr" src="{{brand.wechatQr}}" mode="widthFix"
+          bindlongpress="onPreviewQr" data-url="{{brand.wechatQr}}"></image>
+
+        <!-- 电话 -->
+        <view class="contact-phone">
+          <view class="contact-phone-num">{{sec.phone}}</view>
+          <view class="contact-call-btn" bindtap="onCallPhone" data-phone="{{sec.phone}}">拨打</view>
+        </view>
+      </view>
+
+      <!-- Social 社媒二维码 -->
+      <view wx:elif="{{sec.type === 'social'}}" class="sec sec-social">
+        <view class="sec-header">
+          <view class="sec-title">{{sec.title}}</view>
+          <view class="sec-subtitle">{{sec.subtitle}}</view>
+          <view class="sec-line"></view>
+        </view>
+        <view class="social-list">
+          <view class="social-card" wx:for="{{sec.accounts}}" wx:key="name" wx:for-item="acc">
+          <view class="social-qr-wrap">
+            <image class="social-qr" src="{{acc.qrCode}}" mode="aspectFit"
+              show-menu-by-longpress="{{true}}"></image>
+          </view>
+          <view class="social-name">{{acc.name}}</view>
+          <view class="social-handle">{{acc.handle}}</view>
+          <view class="social-long-press">长按识别</view>
+        </view>
+        </view>
+      </view>
+
+    </block>
+
+    <view class="brand-bottom-space"></view>
+  </scroll-view>
 </view>

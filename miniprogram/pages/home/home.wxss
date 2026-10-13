@@ -45,10 +45,10 @@
 }
 
 .top-bar-logo {
-  font-size: 32rpx;
-  color: #FFFFFF;
-  font-weight: 600;
-  letter-spacing: 4rpx;
+  font-size: 36rpx;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 8rpx;
+  font-weight: 300;
 }
 
 .top-bar-right {

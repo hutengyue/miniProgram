@@ -20,7 +20,12 @@
             <text class="store-city-cn">{{item.city}}</text>
             <text class="store-city-en">/{{item.cityEn}}</text>
           </view>
-          <view class="store-nav-btn" data-address="{{item.address}}" catchtap="onNavigate" hover-class="nav-btn-hover">
+          <view class="store-nav-btn"
+            data-lat="{{item.lat}}"
+            data-lng="{{item.lng}}"
+            data-name="{{item.city}}店"
+            data-address="{{item.address}}"
+            catchtap="onNavigate" hover-class="nav-btn-hover">
             <image class="nav-icon" src="/images/route.png" mode="aspectFit"></image>
           </view>
         </view>

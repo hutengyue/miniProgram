@@ -166,5 +166,18 @@ Page({
 
   onProductTap: function(e) {
     wx.showToast({ title: '敬请期待', icon: 'none' })
+  },
+
+  onShareAppMessage: function() {
+    return {
+      title: 'LORBN劳宾 · 定制卫浴产品中心',
+      path: '/pages/products/products'
+    }
+  },
+
+  onShareTimeline: function() {
+    return {
+      title: 'LORBN劳宾 · 定制卫浴产品中心'
+    }
   }
 })

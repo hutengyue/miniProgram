@@ -69,5 +69,18 @@ Page({
       activeCategory: 'all',
       filteredCases: this._allCases
     })
+  },
+
+  onShareAppMessage: function() {
+    return {
+      title: 'LORBN劳宾 · 实景案例鉴赏',
+      path: '/pages/cases/cases'
+    }
+  },
+
+  onShareTimeline: function() {
+    return {
+      title: 'LORBN劳宾 · 实景案例鉴赏'
+    }
   }
 })

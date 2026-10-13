@@ -2,13 +2,8 @@ var dataService = require('../../data/data-service.js')
 
 Page({
   data: {
-    brand: {},
-    currentPanoramaIndex: 0,
-    showHint: true
+    brand: {}
   },
-
-  _panoramaStartX: 0,
-  _panoramaStartOffsetX: 0,
 
   onLoad: function() {
     getApp().globalData.currentTab = 1
@@ -25,35 +20,33 @@ Page({
     }
   },
 
-  onSwitchPanorama: function(e) {
-    var index = e.currentTarget.dataset.index
-    if (index === this.data.currentPanoramaIndex) return
-    this.setData({
-      currentPanoramaIndex: index,
-      showHint: true
+  onCallPhone: function(e) {
+    var phone = e.currentTarget.dataset.phone
+    if (!phone) return
+    wx.makePhoneCall({ phoneNumber: phone })
+  },
+
+  onPreviewQr: function(e) {
+    var url = e.currentTarget.dataset.url
+    if (!url) return
+    wx.previewImage({
+      urls: [url],
+      current: url
     })
   },
 
-  onPanoramaTouchStart: function(e) {
-    this._panoramaStartX = e.touches[0].clientX
-    this._panoramaStartOffsetX = this.data.panoramaOffsetX
-    this.setData({ panoramaDragged: true })
-  },
-
-  onPanoramaTouchMove: function(e) {
-    var deltaX = e.touches[0].clientX - this._panoramaStartX
-    var sysInfo = wx.getSystemInfoSync()
-    var pxToRpx = 750 / sysInfo.windowWidth
-    var newOffsetX = this._panoramaStartOffsetX + deltaX * pxToRpx
-    var minOffset = -750
-    var maxOffset = 0
-    if (newOffsetX > maxOffset) {
-      newOffsetX = newOffsetX + minOffset
-    } else if (newOffsetX < minOffset) {
-      newOffsetX = newOffsetX - minOffset
+  onShareAppMessage: function() {
+    var brand = this.data.brand || {}
+    return {
+      title: (brand.brandName || '品牌故事') + ' · ' + (brand.slogan || ''),
+      path: '/pages/brand/brand',
+      imageUrl: brand.brandImage
     }
-    this.setData({ panoramaOffsetX: newOffsetX })
   },
 
-  onPanoramaTouchEnd: function() {}
+  onShareTimeline: function() {
+    return {
+      title: (this.data.brand.brandName || 'HESEINT赫世') + ' · 探索美好秩序'
+    }
+  }
 })

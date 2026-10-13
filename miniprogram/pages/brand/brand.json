@@ -1,7 +1,9 @@
 {
   "navigationStyle": "default",
-  "navigationBarTitleText": "品牌",
+  "navigationBarTitleText": "品牌故事",
   "navigationBarBackgroundColor": "#0A0A0A",
   "navigationBarTextStyle": "white",
-  "backgroundColor": "#FFFFFF"
+  "backgroundColor": "#FFFFFF",
+  "enableShareAppMessage": true,
+  "enableShareTimeline": true
 }

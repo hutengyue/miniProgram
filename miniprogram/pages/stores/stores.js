@@ -52,9 +52,17 @@ Page({
   },
 
   onNavigate: function(e) {
-    wx.showToast({
-      title: '导航功能开发中',
-      icon: 'none'
+    var store = e.currentTarget.dataset
+    if (!store.lat || !store.lng) {
+      wx.showToast({ title: '暂无坐标信息', icon: 'none' })
+      return
+    }
+    wx.openLocation({
+      latitude: Number(store.lat),
+      longitude: Number(store.lng),
+      name: store.name,
+      address: store.address,
+      scale: 17
     })
   },
 
@@ -69,5 +77,18 @@ Page({
         })
       }
     })
+  },
+
+  onShareAppMessage: function() {
+    return {
+      title: 'LORBN劳宾 · 全国门店查询',
+      path: '/pages/stores/stores'
+    }
+  },
+
+  onShareTimeline: function() {
+    return {
+      title: 'LORBN劳宾 · 全国门店查询'
+    }
   }
 })
