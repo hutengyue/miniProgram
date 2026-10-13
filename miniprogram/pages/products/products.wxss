@@ -174,6 +174,12 @@ page {
 .banner-img {
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.45s ease-out;
+}
+
+.banner-img.img-loaded {
+  opacity: 1;
 }
 
 .section-title {
@@ -203,6 +209,12 @@ page {
   width: 100%;
   height: 240rpx;
   background: #F7F7F7;
+  opacity: 0;
+  transition: opacity 0.45s ease-out;
+}
+
+.product-img.img-loaded {
+  opacity: 1;
 }
 
 .product-name {

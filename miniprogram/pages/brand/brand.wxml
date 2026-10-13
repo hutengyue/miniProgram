@@ -5,7 +5,7 @@
 
       <!-- Hero 首图 -->
       <view wx:if="{{sec.type === 'hero'}}" class="sec sec-hero">
-        <image class="hero-bg" src="{{sec.image}}" mode="aspectFill"></image>
+        <image class="hero-bg {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="aspectFill" bindload="onImgLoad" binderror="onImgError" data-src="{{sec.image}}"></image>
         <view class="hero-overlay"></view>
         <view class="hero-name">{{sec.nameEn}}</view>
         <view class="hero-mono">
@@ -34,7 +34,7 @@
 
       <!-- Image 全屏图（留呼吸感，窄边距 + 圆角） -->
       <view wx:elif="{{sec.type === 'image'}}" class="sec sec-image">
-        <image class="full-img" src="{{sec.image}}" mode="widthFix"></image>
+        <image class="full-img {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="widthFix" lazy-load="true" bindload="onImgLoad" data-src="{{sec.image}}"></image>
       </view>
 
       <!-- Section 通用 (标题+正文/时间轴+可选图) -->
@@ -65,7 +65,7 @@
           </view>
         </block>
 
-        <image wx:if="{{sec.image}}" class="sec-img" src="{{sec.image}}" mode="widthFix"></image>
+        <image wx:if="{{sec.image}}" class="sec-img {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="widthFix" lazy-load="true" bindload="onImgLoad" data-src="{{sec.image}}"></image>
       </view>
 
       <!-- Contact 联系 -->
@@ -77,8 +77,8 @@
         </view>
 
         <!-- 微信二维码图 -->
-        <image class="contact-qr" src="{{brand.wechatQr}}" mode="widthFix"
-          bindlongpress="onPreviewQr" data-url="{{brand.wechatQr}}"></image>
+        <image class="contact-qr {{loadedImages[brand.wechatQr] ? 'img-loaded' : ''}}" src="{{brand.wechatQr}}" mode="widthFix"
+          show-menu-by-longpress="{{true}}" bindload="onImgLoad" binderror="onImgError" data-src="{{brand.wechatQr}}"></image>
 
         <!-- 电话 -->
         <view class="contact-phone">
@@ -97,8 +97,8 @@
         <view class="social-list">
           <view class="social-card" wx:for="{{sec.accounts}}" wx:key="name" wx:for-item="acc">
           <view class="social-qr-wrap">
-            <image class="social-qr" src="{{acc.qrCode}}" mode="aspectFit"
-              show-menu-by-longpress="{{true}}"></image>
+            <image class="social-qr {{loadedImages[acc.qrCode] ? 'img-loaded' : ''}}" src="{{acc.qrCode}}" mode="aspectFit"
+              show-menu-by-longpress="{{true}}" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{acc.qrCode}}"></image>
           </view>
           <view class="social-name">{{acc.name}}</view>
           <view class="social-handle">{{acc.handle}}</view>

@@ -31,12 +31,12 @@
     <scroll-view class="content-area" scroll-y enhanced show-scrollbar="{{false}}" scroll-into-view="{{scrollToId}}" scroll-with-animation bindscroll="onContentScroll">
       <view class="section" id="sec-{{item.id}}" wx:for="{{sections}}" wx:key="id">
         <view class="banner-wrap" wx:if="{{item.bannerImage}}">
-          <image class="banner-img" src="{{item.bannerImage}}" mode="aspectFill"></image>
+          <image class="banner-img {{loadedImages[item.bannerImage] ? 'img-loaded' : ''}}" src="{{item.bannerImage}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" data-src="{{item.bannerImage}}"></image>
         </view>
         <view class="section-title">{{item.name}}</view>
         <view class="product-grid" wx:if="{{item.products.length > 0}}">
           <view class="product-card" wx:for="{{item.products}}" wx:for-item="product" wx:key="id" data-id="{{product.id}}" bindtap="onProductTap">
-            <image class="product-img" src="{{product.image}}" mode="aspectFill"></image>
+            <image class="product-img {{loadedImages[product.image] ? 'img-loaded' : ''}}" src="{{product.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{product.image}}"></image>
             <view class="product-name">{{product.name}}</view>
           </view>
         </view>

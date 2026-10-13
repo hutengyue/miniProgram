@@ -1,6 +1,9 @@
 var dataService = require('../../data/data-service.js')
+var imageLoader = require('../../behaviors/image-loader.js')
 
 Page({
+  behaviors: [imageLoader],
+
   data: {
     brand: {}
   },
@@ -24,15 +27,6 @@ Page({
     var phone = e.currentTarget.dataset.phone
     if (!phone) return
     wx.makePhoneCall({ phoneNumber: phone })
-  },
-
-  onPreviewQr: function(e) {
-    var url = e.currentTarget.dataset.url
-    if (!url) return
-    wx.previewImage({
-      urls: [url],
-      current: url
-    })
   },
 
   onShareAppMessage: function() {

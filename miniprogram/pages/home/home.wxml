@@ -21,7 +21,7 @@
           show-progress="{{false}}"
           enable-progress-gesture="{{false}}"
           object-fit="cover"></video>
-        <image wx:else class="slide-bg" src="{{item.image}}" mode="aspectFill"></image>
+        <image wx:else class="slide-bg {{loadedImages[item.image] ? 'img-loaded' : ''}}" src="{{item.image}}" mode="aspectFill" bindload="onImgLoad" binderror="onImgError" data-src="{{item.image}}"></image>
         <view class="slide-overlay"></view>
         <view class="slide-content">
           <view class="hero-text">

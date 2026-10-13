@@ -129,6 +129,12 @@
   height: 380rpx;
   background: #E8E8E8;
   display: block;
+  opacity: 0;
+  transition: opacity 0.45s ease-out;
+}
+
+.case-img.img-loaded {
+  opacity: 1;
 }
 
 .case-brand-tag {

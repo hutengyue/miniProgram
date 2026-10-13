@@ -1,6 +1,9 @@
 var dataService = require('../../data/data-service.js')
+var imageLoader = require('../../behaviors/image-loader.js')
 
 Page({
+  behaviors: [imageLoader],
+
   data: {
     brand: {},
     statusBarHeight: 20,
