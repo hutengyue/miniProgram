@@ -35,9 +35,9 @@ function getCases(callback) {
   })
 }
 
-function getStores(callback) {
+function getContact(callback) {
   fetchData(function (data) {
-    callback(data ? data.stores : null)
+    callback(data ? data.contact : null)
   })
 }
 
@@ -52,6 +52,6 @@ module.exports = {
   getBrand: getBrand,
   getProducts: getProducts,
   getCases: getCases,
-  getStores: getStores,
+  getContact: getContact,
   getHomeSlides: getHomeSlides
 }

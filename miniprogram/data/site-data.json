@@ -87,28 +87,21 @@
       {
         "type": "image",
         "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80"
-      },
-      {
-        "type": "contact",
-        "title": "联系我们",
-        "subtitle": "CONTACT US",
-        "phone": "15868623283",
-        "phoneLabel": "设计顾问",
-        "wechatCard": {
-          "name": "Cavalry",
-          "location": "浙江 杭州",
-          "qrLabel": "扫二维码，添加我为朋友"
-        }
-      },
-      {
-        "type": "social",
-        "title": "关注官方账号",
-        "subtitle": "FOLLOW US",
-        "accounts": [
-          { "name": "小红书", "handle": "@HESEINT赫世", "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20red%20and%20white%20xiaohongshu%20logo%20center&image_size=square_hd" },
-          { "name": "抖音", "handle": "@HESEINT赫世卫浴", "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20black%20and%20white%20douyin%20logo%20center&image_size=square_hd" }
-        ]
       }
+    ]
+  },
+  "contact": {
+    "wechatQr": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/7bf9f02d4287c9db869877430b611c7b.jpg",
+    "phone": "15868623283",
+    "phoneLabel": "设计顾问",
+    "wechatCard": {
+      "name": "Cavalry",
+      "location": "浙江 杭州",
+      "qrLabel": "扫二维码，添加我为朋友"
+    },
+    "socialAccounts": [
+      { "name": "小红书", "handle": "@HESEINT赫世", "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20red%20and%20white%20xiaohongshu%20logo%20center&image_size=square_hd" },
+      { "name": "抖音", "handle": "@HESEINT赫世卫浴", "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20black%20and%20white%20douyin%20logo%20center&image_size=square_hd" }
     ]
   },
   "products": {
@@ -286,14 +279,6 @@
       { "id": "vg-1-02", "name": "暮雪", "code": "VG-1-02", "category": "vogue", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" }
     ]
   },
-  "stores": {
-    "list": [
-      { "id": "shanghai", "city": "上海", "cityEn": "SHANGHAI", "address": "上海市浦东新区临御路518号红星美凯龙1楼赫世 A8126展位", "hours": "周一至周五10:00-18:00 周末10:00-20:00", "lat": 31.2304, "lng": 121.4737 },
-      { "id": "yongkang", "city": "永康", "cityEn": "YONGKANG", "address": "浙江省金华市永康市西站国际装饰城B区11号德国高仪", "hours": "周一至周日09:30-18:00", "lat": 28.8907, "lng": 120.0346 },
-      { "id": "jinhua", "city": "金华", "cityEn": "JINHUA", "address": "浙江省金华市金东区浙中建材市场A座南一层一号门", "hours": "周一至周日09:30-18:00", "lat": 29.0752, "lng": 119.6495 },
-      { "id": "lishui", "city": "丽水", "cityEn": "LISHUI", "address": "浙江省丽水市莲都区浙南国际建材市场E4区一楼法恩莎卫浴旗舰店", "hours": "周一至周日09:30-18:00", "lat": 28.4680, "lng": 119.9229 }
-    ]
-  },
   "homeSlides": [
     {
       "id": "brand",
@@ -324,12 +309,12 @@
       "tabPath": "/pages/cases/cases"
     },
     {
-      "id": "stores",
+      "id": "contact",
       "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
-      "title": "期待与您相遇",
-      "subtitle": "Visit Our Showroom",
-      "desc": ["走进门店，亲身体验", "定制卫浴的美好秩序"],
-      "buttonText": "即刻探索",
+      "title": "与我们联系",
+      "subtitle": "Get In Touch",
+      "desc": ["扫码添加顾问", "开启专属定制方案"],
+      "buttonText": "即刻联系",
       "tabPath": "/pages/stores/stores"
     }
   ]
