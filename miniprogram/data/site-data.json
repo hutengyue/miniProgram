@@ -264,19 +264,55 @@
     ]
   },
   "cases": {
-    "categories": [
-      { "id": "all", "name": "全部" },
-      { "id": "heritage", "name": "藏品系列实景" },
-      { "id": "classic", "name": "经典系列实景" },
-      { "id": "vogue", "name": "风尚系列实景" }
+    "modules": [
+      { "id": "address", "name": "地址" },
+      { "id": "product", "name": "产品" },
+      { "id": "video", "name": "视频" }
     ],
-    "list": [
-      { "id": "lb-1-73", "name": "剪影II", "code": "LB-1-73", "category": "heritage", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" },
-      { "id": "mg-06", "name": "宫阙", "code": "MG-06", "category": "heritage", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" },
-      { "id": "cl-2-01", "name": "云栖", "code": "CL-2-01", "category": "classic", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
-      { "id": "cl-2-02", "name": "星轨", "code": "CL-2-02", "category": "classic", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
-      { "id": "vg-1-01", "name": "朝露", "code": "VG-1-01", "category": "vogue", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
-      { "id": "vg-1-02", "name": "暮雪", "code": "VG-1-02", "category": "vogue", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" }
+    "addressGroups": [
+      {
+        "id": "xiao-feng-yin-yue",
+        "community": "晓风印月",
+        "location": "浙江·杭州",
+        "images": [
+          { "id": "xf-01", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" },
+          { "id": "xf-02", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
+          { "id": "xf-03", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
+          { "id": "xf-04", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
+        ]
+      },
+      {
+        "id": "gui-yu-jiang-nan",
+        "community": "桂语江南",
+        "location": "浙江·杭州",
+        "images": [
+          { "id": "gy-01", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
+          { "id": "gy-02", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" },
+          { "id": "gy-03", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" },
+          { "id": "gy-04", "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80" }
+        ]
+      },
+      {
+        "id": "yun-shang-li",
+        "community": "雲上里",
+        "location": "浙江·金华",
+        "images": [
+          { "id": "ys-01", "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80" },
+          { "id": "ys-02", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" }
+        ]
+      }
+    ],
+    "products": [
+      { "id": "cp-01", "name": "KL822190", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" },
+      { "id": "cp-02", "name": "KL822186", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" },
+      { "id": "cp-03", "name": "KL822184", "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80" },
+      { "id": "cp-04", "name": "LB-1-73", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" },
+      { "id": "cp-05", "name": "MG-06", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
+      { "id": "cp-06", "name": "VG-1-01", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" }
+    ],
+    "videos": [
+      { "id": "cv-01", "title": "品牌宣传片", "poster": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80", "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4" },
+      { "id": "cv-02", "title": "月相大师系列", "poster": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80", "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4" }
     ]
   },
   "homeSlides": [
