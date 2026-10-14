@@ -5,10 +5,13 @@ Page({
   behaviors: [imageLoader],
 
   data: {
-    categories: [],
-    filteredCases: [],
-    activeCategory: 'all',
-    searchKeyword: ''
+    modules: [],
+    activeModule: 'address',
+    addressGroups: [],
+    products: [],
+    videos: [],
+    searchKeyword: '',
+    playingVideoId: ''
   },
 
   onLoad: function() {
@@ -16,11 +19,15 @@ Page({
     var that = this
     dataService.getCases(function(cases) {
       if (!cases) return
+      that._allAddressGroups = cases.addressGroups || []
+      that._allProducts = cases.products || []
+      that._allVideos = cases.videos || []
       that.setData({
-        categories: cases.categories,
-        filteredCases: cases.list
+        modules: cases.modules || [],
+        addressGroups: that._allAddressGroups,
+        products: that._allProducts,
+        videos: that._allVideos
       })
-      that._allCases = cases.list
     })
   },
 
@@ -30,64 +37,90 @@ Page({
     }
   },
 
-  onCategoryChange: function(e) {
+  // 切换模块（地址/产品/视频）
+  onModuleChange: function(e) {
     var id = e.currentTarget.dataset.id
-    var keyword = this.data.searchKeyword.trim()
-    var filtered = this._allCases
-    if (id !== 'all') {
-      filtered = filtered.filter(function(c) { return c.category === id })
-    }
-    if (keyword) {
-      filtered = filtered.filter(function(c) {
-        return c.name.indexOf(keyword) > -1 || c.code.toLowerCase().indexOf(keyword.toLowerCase()) > -1
-      })
-    }
+    if (id === this.data.activeModule) return
     this.setData({
-      activeCategory: id,
-      filteredCases: filtered
+      activeModule: id,
+      playingVideoId: ''
     })
+    this.applySearch(this.data.searchKeyword)
+  },
+
+  // 统一的搜索过滤入口
+  applySearch: function(keyword) {
+    keyword = (keyword || '').trim()
+    var module = this.data.activeModule
+
+    if (module === 'address') {
+      var groups = this._allAddressGroups || []
+      if (keyword) {
+        groups = groups.filter(function(g) {
+          return g.community.indexOf(keyword) > -1 ||
+                 (g.location || '').indexOf(keyword) > -1
+        })
+      }
+      this.setData({ addressGroups: groups })
+    } else if (module === 'product') {
+      var products = this._allProducts || []
+      if (keyword) {
+        products = products.filter(function(p) {
+          return (p.name || '').toLowerCase().indexOf(keyword.toLowerCase()) > -1
+        })
+      }
+      this.setData({ products: products })
+    } else if (module === 'video') {
+      var videos = this._allVideos || []
+      if (keyword) {
+        videos = videos.filter(function(v) {
+          return (v.title || '').indexOf(keyword) > -1
+        })
+      }
+      this.setData({ videos: videos })
+    }
   },
 
   onSearchInput: function(e) {
-    var keyword = e.detail.value.trim()
-    var activeCategory = this.data.activeCategory
-    var filtered = this._allCases
-    if (activeCategory !== 'all') {
-      filtered = filtered.filter(function(c) { return c.category === activeCategory })
-    }
-    if (keyword) {
-      filtered = filtered.filter(function(c) {
-        return c.name.indexOf(keyword) > -1 || c.code.toLowerCase().indexOf(keyword.toLowerCase()) > -1
-      })
-    }
-    this.setData({
-      searchKeyword: keyword,
-      filteredCases: filtered
-    })
+    var keyword = e.detail.value
+    this.setData({ searchKeyword: keyword })
+    this.applySearch(keyword)
   },
 
   onClearSearch: function() {
-    var activeCategory = this.data.activeCategory
-    var filtered = this._allCases
-    if (activeCategory !== 'all') {
-      filtered = filtered.filter(function(c) { return c.category === activeCategory })
-    }
-    this.setData({
-      searchKeyword: '',
-      filteredCases: filtered
+    this.setData({ searchKeyword: '' })
+    this.applySearch('')
+  },
+
+  // 点击小区图片 → 全屏预览该小区所有图
+  onPreviewImage: function(e) {
+    var groupIndex = e.currentTarget.dataset.group
+    var imgIndex = e.currentTarget.dataset.index
+    var group = this.data.addressGroups[groupIndex]
+    if (!group) return
+    var urls = group.images.map(function(img) { return img.image })
+    wx.previewImage({
+      current: urls[imgIndex],
+      urls: urls
     })
+  },
+
+  // 点击视频封面 → 就地播放
+  onPlayVideo: function(e) {
+    var id = e.currentTarget.dataset.id
+    this.setData({ playingVideoId: id })
   },
 
   onShareAppMessage: function() {
     return {
-      title: 'LORBN劳宾 · 实景案例鉴赏',
+      title: 'HESEINT赫世 · 实景案例鉴赏',
       path: '/pages/cases/cases'
     }
   },
 
   onShareTimeline: function() {
     return {
-      title: 'LORBN劳宾 · 实景案例鉴赏'
+      title: 'HESEINT赫世 · 实景案例鉴赏'
     }
   }
 })
