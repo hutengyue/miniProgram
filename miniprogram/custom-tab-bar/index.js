@@ -7,7 +7,7 @@ Component({
       { pagePath: '/pages/brand/brand', text: '品牌' },
       { pagePath: '/pages/products/products', text: '产品' },
       { pagePath: '/pages/cases/cases', text: '实例' },
-      { pagePath: '/pages/stores/stores', text: '门店' }
+      { pagePath: '/pages/stores/stores', text: '联系' }
     ]
   },
 

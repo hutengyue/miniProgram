@@ -1,9 +1,12 @@
 {
   "navigationStyle": "default",
-  "navigationBarTitleText": "门店",
+  "navigationBarTitleText": "联系",
   "navigationBarBackgroundColor": "#0A0A0A",
   "navigationBarTextStyle": "white",
-  "backgroundColor": "#F4F4F4",
+  "backgroundColor": "#FFFFFF",
   "enableShareAppMessage": true,
-  "enableShareTimeline": true
+  "enableShareTimeline": true,
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  }
 }

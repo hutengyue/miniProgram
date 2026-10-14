@@ -32,12 +32,6 @@ Page({
     }
   },
 
-  onCallPhone: function(e) {
-    var phone = e.currentTarget.dataset.phone
-    if (!phone) return
-    wx.makePhoneCall({ phoneNumber: phone })
-  },
-
   onShareAppMessage: function() {
     var brand = this.data.brand || {}
     return {

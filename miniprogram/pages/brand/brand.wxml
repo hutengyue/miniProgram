@@ -61,47 +61,6 @@
         <image wx:if="{{sec.image}}" class="sec-img {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="widthFix" lazy-load="true" bindload="onImgLoad" data-src="{{sec.image}}"></image>
       </view>
 
-      <!-- Contact 联系 -->
-      <view wx:elif="{{sec.type === 'contact'}}" class="sec sec-contact">
-        <view class="sec-header">
-          <view class="sec-title">{{sec.title}}</view>
-          <view class="sec-subtitle">{{sec.subtitle}}</view>
-          <view class="sec-line"></view>
-        </view>
-
-        <!-- 微信二维码图 -->
-        <view class="contact-qr-wrap">
-          <image class="contact-qr {{loadedImages[brand.wechatQr] ? 'img-loaded' : ''}}" src="{{brand.wechatQr}}" mode="widthFix"
-            show-menu-by-longpress="{{true}}" bindload="onImgLoad" binderror="onImgError" data-src="{{brand.wechatQr}}"></image>
-        </view>
-
-        <!-- 电话 -->
-        <view class="contact-phone">
-          <view class="contact-phone-num">{{sec.phone}}</view>
-          <van-icon name="phone" class="contact-call-icon" bindtap="onCallPhone" data-phone="{{sec.phone}}"></van-icon>
-        </view>
-      </view>
-
-      <!-- Social 社媒二维码 -->
-      <view wx:elif="{{sec.type === 'social'}}" class="sec sec-social">
-        <view class="sec-header">
-          <view class="sec-title">{{sec.title}}</view>
-          <view class="sec-subtitle">{{sec.subtitle}}</view>
-          <view class="sec-line"></view>
-        </view>
-        <view class="social-list">
-          <view class="social-card" wx:for="{{sec.accounts}}" wx:key="name" wx:for-item="acc">
-          <view class="social-qr-wrap">
-            <image class="social-qr {{loadedImages[acc.qrCode] ? 'img-loaded' : ''}}" src="{{acc.qrCode}}" mode="aspectFit"
-              show-menu-by-longpress="{{true}}" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{acc.qrCode}}"></image>
-          </view>
-          <view class="social-name">{{acc.name}}</view>
-          <view class="social-handle">{{acc.handle}}</view>
-          <view class="social-long-press">长按识别</view>
-        </view>
-        </view>
-      </view>
-
     </block>
 
     <view class="brand-bottom-space"></view>
