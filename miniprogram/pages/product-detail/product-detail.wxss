@@ -1,0 +1,76 @@
+.detail-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.detail-scroll {
+  height: 100vh;
+}
+
+/* ============ 产品标题 ============ */
+.detail-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72rpx 48rpx 48rpx;
+}
+
+.detail-name {
+  font-size: 40rpx;
+  font-weight: 500;
+  color: #1A1A1A;
+  letter-spacing: 6rpx;
+  padding-left: 6rpx;
+}
+
+.detail-id {
+  font-size: 20rpx;
+  color: #BBBBBB;
+  letter-spacing: 4rpx;
+  margin-top: 12rpx;
+  text-transform: uppercase;
+}
+
+.detail-line {
+  width: 48rpx;
+  height: 1rpx;
+  background: #C9A962;
+  margin-top: 24rpx;
+}
+
+/* ============ 图片列表 ============ */
+.detail-img-list {
+  padding: 0 32rpx;
+}
+
+.detail-img {
+  width: 100%;
+  display: block;
+  border-radius: 8rpx;
+  background: #F5F5F5;
+  margin-bottom: 24rpx;
+  opacity: 0;
+  transition: opacity 0.45s ease-out;
+}
+
+.detail-img.img-loaded {
+  opacity: 1;
+}
+
+/* ============ Empty ============ */
+.detail-empty {
+  display: flex;
+  justify-content: center;
+  padding: 200rpx 0;
+}
+
+.detail-empty-text {
+  font-size: 26rpx;
+  color: #BBBBBB;
+  letter-spacing: 2rpx;
+}
+
+.detail-bottom-space {
+  height: 80rpx;
+}

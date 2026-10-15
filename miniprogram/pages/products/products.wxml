@@ -35,8 +35,8 @@
         </view>
         <view class="section-title">{{item.name}}</view>
         <view class="product-grid" wx:if="{{item.products.length > 0}}">
-          <view class="product-card" wx:for="{{item.products}}" wx:for-item="product" wx:key="id" data-id="{{product.id}}" bindtap="onProductTap">
-            <image class="product-img {{loadedImages[product.image] ? 'img-loaded' : ''}}" src="{{product.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{product.image}}"></image>
+          <view class="product-card" wx:for="{{item.products}}" wx:for-item="product" wx:key="id" data-id="{{product.id}}" bindtap="onProductTap" hover-class="product-hover">
+            <image class="product-img {{loadedImages[product.images[0]] ? 'img-loaded' : ''}}" src="{{product.images[0]}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{product.images[0]}}"></image>
             <view class="product-name">{{product.name}}</view>
           </view>
         </view>

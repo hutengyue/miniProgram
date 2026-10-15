@@ -182,31 +182,34 @@
   letter-spacing: 1rpx;
 }
 
-/* ============ 视频模块：视频卡片 ============ */
+/* ============ 视频模块：竖版 9:16 两列卡片 ============ */
 .video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 24rpx 32rpx 0;
 }
 
 .video-card {
-  background: #FFFFFF;
-  border-radius: 12rpx;
-  overflow: hidden;
+  width: calc(50% - 12rpx);
   margin-bottom: 32rpx;
-}
-
-.video-cover-wrap {
-  width: 100%;
-  position: relative;
 }
 
 .video-cover {
   position: relative;
   width: 100%;
+  border-radius: 12rpx;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+
+.video-cover-hover {
+  opacity: 0.85;
 }
 
 .video-poster {
   width: 100%;
-  height: 400rpx;
+  height: 590rpx;
   background: #E8E8E8;
   display: block;
   opacity: 0;
@@ -222,8 +225,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 96rpx;
-  height: 96rpx;
+  width: 88rpx;
+  height: 88rpx;
   background: rgba(0, 0, 0, 0.45);
   border-radius: 50%;
   display: flex;
@@ -235,23 +238,19 @@
 .play-triangle {
   width: 0;
   height: 0;
-  border-left: 28rpx solid rgba(255, 255, 255, 0.95);
-  border-top: 17rpx solid transparent;
-  border-bottom: 17rpx solid transparent;
-  margin-left: 8rpx;
-}
-
-.video-player {
-  width: 100%;
-  height: 400rpx;
+  border-left: 26rpx solid rgba(255, 255, 255, 0.95);
+  border-top: 16rpx solid transparent;
+  border-bottom: 16rpx solid transparent;
+  margin-left: 7rpx;
 }
 
 .video-title {
-  padding: 24rpx 24rpx 28rpx;
-  font-size: 26rpx;
+  padding: 20rpx 8rpx 0;
+  font-size: 24rpx;
   color: #1A1A1A;
   font-weight: 500;
-  letter-spacing: 2rpx;
+  letter-spacing: 1rpx;
+  text-align: center;
 }
 
 /* ============ Empty ============ */

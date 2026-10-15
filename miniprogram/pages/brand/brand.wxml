@@ -63,6 +63,45 @@
 
     </block>
 
+    <!-- Contact 联系我们（与联系页共用数据） -->
+    <view class="sec sec-contact" wx:if="{{contact.wechatQr || contact.phone}}">
+      <view class="sec-header">
+        <view class="sec-title">联系我们</view>
+        <view class="sec-subtitle">CONTACT US</view>
+        <view class="sec-line"></view>
+      </view>
+
+      <view class="contact-qr-wrap">
+        <image class="contact-qr {{loadedImages[contact.wechatQr] ? 'img-loaded' : ''}}" src="{{contact.wechatQr}}" mode="widthFix"
+          show-menu-by-longpress="{{true}}" bindload="onImgLoad" binderror="onImgError" data-src="{{contact.wechatQr}}"></image>
+      </view>
+
+      <view class="contact-phone">
+        <view class="contact-phone-num">{{contact.phone}}</view>
+        <van-icon name="phone" class="contact-call-icon" bindtap="onCallPhone" data-phone="{{contact.phone}}"></van-icon>
+      </view>
+    </view>
+
+    <!-- Social 关注官方账号（与联系页共用数据） -->
+    <view class="sec sec-social" wx:if="{{contact.socialAccounts.length}}">
+      <view class="sec-header">
+        <view class="sec-title">关注官方账号</view>
+        <view class="sec-subtitle">FOLLOW US</view>
+        <view class="sec-line"></view>
+      </view>
+      <view class="social-list">
+        <view class="social-card" wx:for="{{contact.socialAccounts}}" wx:key="name" wx:for-item="acc">
+          <view class="social-qr-wrap">
+            <image class="social-qr {{loadedImages[acc.qrCode] ? 'img-loaded' : ''}}" src="{{acc.qrCode}}" mode="aspectFit"
+              show-menu-by-longpress="{{true}}" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{acc.qrCode}}"></image>
+          </view>
+          <view class="social-name">{{acc.name}}</view>
+          <view class="social-handle">{{acc.handle}}</view>
+          <view class="social-long-press">长按识别</view>
+        </view>
+      </view>
+    </view>
+
     <view class="brand-bottom-space"></view>
   </scroll-view>
 </view>

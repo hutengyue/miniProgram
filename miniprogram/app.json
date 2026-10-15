@@ -4,7 +4,8 @@
     "pages/brand/brand",
     "pages/products/products",
     "pages/cases/cases",
-    "pages/stores/stores"
+    "pages/stores/stores",
+    "pages/product-detail/product-detail"
   ],
   "window": {
     "navigationStyle": "custom",

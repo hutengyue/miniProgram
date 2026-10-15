@@ -5,7 +5,8 @@ Page({
   behaviors: [imageLoader],
 
   data: {
-    brand: {}
+    brand: {},
+    contact: {}
   },
 
   onLoad: function() {
@@ -23,6 +24,11 @@ Page({
         }
       }
       that.setData({ brand: brand })
+    })
+    // 底部联系区块（与联系页共用 contact 数据）
+    dataService.getContact(function(contact) {
+      if (!contact) return
+      that.setData({ contact: contact })
     })
   },
 

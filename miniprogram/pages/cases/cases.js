@@ -10,8 +10,7 @@ Page({
     activeCommunityId: '',
     addressGroups: [],
     products: [],
-    videos: [],
-    playingVideoId: ''
+    videos: []
   },
 
   onLoad: function() {
@@ -68,10 +67,20 @@ Page({
     })
   },
 
-  // 点击视频封面 → 就地播放
+  // 点击视频封面 → 全屏播放（9:16 竖屏视频）
   onPlayVideo: function(e) {
     var id = e.currentTarget.dataset.id
-    this.setData({ playingVideoId: id })
+    var video = (this.data.videos || []).filter(function(v) { return v.id === id })[0]
+    if (!video) return
+    wx.previewMedia({
+      sources: [{
+        url: video.url,
+        type: 'video',
+        poster: video.poster
+      }],
+      current: 0,
+      showmenu: true
+    })
   },
 
   onShareAppMessage: function() {

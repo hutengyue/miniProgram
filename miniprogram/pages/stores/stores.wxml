@@ -9,6 +9,23 @@
         <view class="sec-line"></view>
       </view>
 
+      <!-- 公司地址 + 导航 -->
+      <view class="contact-address" wx:if="{{contact.address}}">
+        <view class="address-title-row">
+          <view class="address-name">{{contact.address.name}}</view>
+          <view class="address-nav-btn"
+            hover-class="nav-btn-hover"
+            bindtap="onOpenMap"
+            data-lat="{{contact.address.lat}}"
+            data-lng="{{contact.address.lng}}"
+            data-name="{{contact.address.name}}"
+            data-detail="{{contact.address.detail}}">
+            <van-icon name="guide-o" class="address-nav-icon" />
+          </view>
+        </view>
+        <view class="address-detail">{{contact.address.detail}}</view>
+      </view>
+
       <!-- 微信二维码 -->
       <view class="contact-qr-wrap">
         <image class="contact-qr {{loadedImages[contact.wechatQr] ? 'img-loaded' : ''}}"

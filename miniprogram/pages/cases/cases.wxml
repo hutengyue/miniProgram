@@ -25,7 +25,7 @@
         <view wx:if="{{activeCommunityId === group.id}}" class="address-group">
           <view class="group-header">
             <view class="group-name">{{group.community}}</view>
-            <view class="group-location">{{group.location}}</view>
+            <view class="group-location" wx:if="{{group.location}}">{{group.location}}</view>
             <view class="group-line"></view>
           </view>
           <view class="group-grid">
@@ -53,17 +53,14 @@
       </view>
     </view>
 
-    <!-- ========== 视频模块：视频卡片 ========== -->
+    <!-- ========== 视频模块：竖版视频卡片 ========== -->
     <view class="module-view" wx:elif="{{activeModule === 'video'}}">
       <view class="video-list">
         <view class="video-card" wx:for="{{videos}}" wx:key="id">
-          <view class="video-cover-wrap">
-            <video wx:if="{{playingVideoId === item.id}}" class="video-player" src="{{item.url}}" autoplay controls object-fit="cover"></video>
-            <view wx:else class="video-cover" data-id="{{item.id}}" bindtap="onPlayVideo">
-              <image class="video-poster {{loadedImages[item.poster] ? 'img-loaded' : ''}}" src="{{item.poster}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{item.poster}}"></image>
-              <view class="video-play-btn">
-                <view class="play-triangle"></view>
-              </view>
+          <view class="video-cover" data-id="{{item.id}}" bindtap="onPlayVideo" hover-class="video-cover-hover">
+            <image class="video-poster {{loadedImages[item.poster] ? 'img-loaded' : ''}}" src="{{item.poster}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{item.poster}}"></image>
+            <view class="video-play-btn">
+              <view class="play-triangle"></view>
             </view>
           </view>
           <view class="video-title">{{item.title}}</view>

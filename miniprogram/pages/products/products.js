@@ -204,7 +204,11 @@ Page({
   },
 
   onProductTap: function(e) {
-    wx.showToast({ title: '敬请期待', icon: 'none' })
+    var id = e.currentTarget.dataset.id
+    if (!id) return
+    wx.navigateTo({
+      url: '/pages/product-detail/product-detail?id=' + id
+    })
   },
 
   onShareAppMessage: function() {

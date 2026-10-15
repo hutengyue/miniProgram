@@ -1,0 +1,28 @@
+<view class="detail-page">
+  <scroll-view class="detail-scroll" scroll-y enhanced="{{true}}" show-scrollbar="{{false}}">
+
+    <block wx:if="{{product}}">
+      <!-- 产品标题 -->
+      <view class="detail-header">
+        <view class="detail-name">{{product.name}}</view>
+        <view class="detail-id">{{product.id}}</view>
+        <view class="detail-line"></view>
+      </view>
+
+      <!-- 图片列表 -->
+      <view class="detail-img-list">
+        <image wx:for="{{product.images}}" wx:key="*this"
+          class="detail-img {{loadedImages[item] ? 'img-loaded' : ''}}"
+          src="{{item}}" mode="widthFix" lazy-load="true"
+          bindload="onImgLoad" binderror="onImgError" data-src="{{item}}"
+          data-index="{{index}}" bindtap="onPreviewImage"></image>
+      </view>
+    </block>
+
+    <view class="detail-empty" wx:if="{{!product}}">
+      <text class="detail-empty-text">加载中...</text>
+    </view>
+
+    <view class="detail-bottom-space"></view>
+  </scroll-view>
+</view>

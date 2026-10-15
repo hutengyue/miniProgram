@@ -342,6 +342,9 @@
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 48rpx;
   gap: 48rpx;
   margin-top: 32rpx;
 }

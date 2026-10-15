@@ -29,6 +29,22 @@ Page({
     wx.makePhoneCall({ phoneNumber: phone })
   },
 
+  // 打开地图导航到公司地址
+  onOpenMap: function(e) {
+    var d = e.currentTarget.dataset
+    if (!d.lat || !d.lng) {
+      wx.showToast({ title: '暂无坐标信息', icon: 'none' })
+      return
+    }
+    wx.openLocation({
+      latitude: Number(d.lat),
+      longitude: Number(d.lng),
+      name: d.name,
+      address: d.detail,
+      scale: 17
+    })
+  },
+
   onShareAppMessage: function() {
     return {
       title: 'HESEINT赫世 · 联系我们',

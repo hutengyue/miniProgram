@@ -3,10 +3,8 @@
     "brandName": "HESEINT赫世",
     "logo": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/logo.png",
     "slogan": "设计师品牌·定制卫浴",
-    "contactPhone": "15868623283",
-    "contactName": "Cavalry",
-    "contactLocation": "浙江 杭州",
-    "wechatQr": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/7bf9f02d4287c9db869877430b611c7b.jpg",
+    "contactPhone": "13736665499",
+    "wechatQr": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/contact.jpg",
     "brandImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
     "sections": [
       {
@@ -52,17 +50,50 @@
         "title": "品牌历程",
         "subtitle": "BRAND HISTORY",
         "timeline": [
-          { "year": "2013年", "text": "佛山创立，源自德国HESEINT设计理念，开启定制卫浴之路。" },
-          { "year": "2014年", "text": "投入大型窑炉生产线，全品类产品矩阵初现雏形。" },
-          { "year": "2016年", "text": "进驻广州、深圳等一线城市高端卖场，品牌影响力快速辐射全国。" },
-          { "year": "2017年", "text": "通过ISO9001国际质量体系认证，具备行业领先的研发与制造实力。" },
-          { "year": "2018年", "text": "推出全新智能卫浴产品线，技术团队规模和制造能力再升级。" },
-          { "year": "2019年", "text": "落地产能升级计划，完整覆盖浴室柜、淋浴房、陶瓷全品类制造。" },
-          { "year": "2020年", "text": "HESEINT HOME智能家居系统发布，智控浴室场景，布局全屋智能生态。" },
-          { "year": "2021年", "text": "行业首创定制化服务体验，覆盖全国200+城市服务网络。" },
-          { "year": "2022年", "text": "推出设计师联名系列，高端形象持续提升，零售网络加速升级。" },
-          { "year": "2023年", "text": "第三代生态系统发布，整体浴室解决方案成为行业标杆。" },
-          { "year": "2025年", "text": "新一代MASTER SHOWROOM空间概念店全国布局，开启沉浸式卫浴消费体验新纪元。" }
+          {
+            "year": "2013年",
+            "text": "佛山创立，源自德国HESEINT设计理念，开启定制卫浴之路。"
+          },
+          {
+            "year": "2014年",
+            "text": "投入大型窑炉生产线，全品类产品矩阵初现雏形。"
+          },
+          {
+            "year": "2016年",
+            "text": "进驻广州、深圳等一线城市高端卖场，品牌影响力快速辐射全国。"
+          },
+          {
+            "year": "2017年",
+            "text": "通过ISO9001国际质量体系认证，具备行业领先的研发与制造实力。"
+          },
+          {
+            "year": "2018年",
+            "text": "推出全新智能卫浴产品线，技术团队规模和制造能力再升级。"
+          },
+          {
+            "year": "2019年",
+            "text": "落地产能升级计划，完整覆盖浴室柜、淋浴房、陶瓷全品类制造。"
+          },
+          {
+            "year": "2020年",
+            "text": "HESEINT HOME智能家居系统发布，智控浴室场景，布局全屋智能生态。"
+          },
+          {
+            "year": "2021年",
+            "text": "行业首创定制化服务体验，覆盖全国200+城市服务网络。"
+          },
+          {
+            "year": "2022年",
+            "text": "推出设计师联名系列，高端形象持续提升，零售网络加速升级。"
+          },
+          {
+            "year": "2023年",
+            "text": "第三代生态系统发布，整体浴室解决方案成为行业标杆。"
+          },
+          {
+            "year": "2025年",
+            "text": "新一代MASTER SHOWROOM空间概念店全国布局，开启沉浸式卫浴消费体验新纪元。"
+          }
         ]
       },
       {
@@ -92,172 +123,242 @@
     ]
   },
   "contact": {
-    "wechatQr": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/7bf9f02d4287c9db869877430b611c7b.jpg",
-    "phone": "15868623283",
-    "wechatCard": {
-      "name": "Cavalry",
-      "location": "浙江 杭州",
-      "qrLabel": "扫二维码，添加我为朋友"
+    "address": {
+      "name": "台州市金伯利家居有限公司",
+      "detail": "中国浙江省台州市椒江区滨海工业区海茂路833弄33号",
+      "lat": 28.6521,
+      "lng": 121.5785
     },
+    "wechatQr": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/contact.jpg",
+    "phone": "13736665499",
     "socialAccounts": [
-      { "name": "小红书", "handle": "@HESEINT赫世", "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20red%20and%20white%20xiaohongshu%20logo%20center&image_size=square_hd" },
-      { "name": "抖音", "handle": "@HESEINT赫世卫浴", "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20black%20and%20white%20douyin%20logo%20center&image_size=square_hd" }
+      {
+        "name": "视频号",
+        "handle": "HESEINT赫世",
+        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20green%20and%20white%20wechat%20channels%20video%20logo%20center&image_size=square_hd"
+      },
+      {
+        "name": "公众号",
+        "handle": "HESEINT赫世",
+        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20green%20and%20white%20wechat%20official%20account%20qr%20code%20center&image_size=square_hd"
+      },
+      {
+        "name": "小红书",
+        "handle": "@HESEINT赫世",
+        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20red%20and%20white%20xiaohongshu%20logo%20center&image_size=square_hd"
+      },
+      {
+        "name": "抖音",
+        "handle": "@HESEINT赫世卫浴",
+        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20black%20and%20white%20douyin%20logo%20center&image_size=square_hd"
+      }
     ]
   },
   "products": {
     "categories": [
       {
-        "id": "yuexiang",
-        "name": "月相大师",
-        "expanded": true,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1200&q=80",
-        "products": [
-          { "id": "kl822190", "name": "KL822190*240", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80" },
-          { "id": "kl822186", "name": "KL822186", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80" },
-          { "id": "kl822184", "name": "KL822184", "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80" },
-          { "id": "kl822182", "name": "KL822182", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
-        ]
-      },
-      {
-        "id": "all",
+        "id": "all-bath",
         "name": "全卫产品",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
-        "products": [
-          { "id": "p-001", "name": "浴室柜套装", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
-          { "id": "p-002", "name": "智能马桶", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
-          { "id": "p-003", "name": "淋浴房", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" },
-          { "id": "p-004", "name": "花洒龙头", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" }
-        ]
-      },
-      {
-        "id": "cabinet",
-        "name": "浴室柜",
-        "expanded": false,
+        "expanded": true,
         "hasSub": true,
         "subCategories": [
           {
-            "id": "cab-light",
-            "name": "轻奢主义",
+            "id": "bathroom-cabinet",
+            "name": "浴室柜",
             "bannerImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
             "products": [
-              { "id": "cl-01", "name": "轻奢浴室柜 A", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
-              { "id": "cl-02", "name": "轻奢浴室柜 B", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" }
+              {
+                "id": "bc-01",
+                "name": "悬浮浴室柜",
+                "images": [
+                  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+                  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+                ]
+              },
+              {
+                "id": "bc-02",
+                "name": "落地浴室柜",
+                "images": [
+                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+                ]
+              }
             ]
           },
           {
-            "id": "cab-modern",
-            "name": "现代简约",
+            "id": "shower-room",
+            "name": "淋浴房",
+            "bannerImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
+            "products": [
+              {
+                "id": "sr-01",
+                "name": "极窄边淋浴房",
+                "images": [
+                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
+                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+                  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
+                ]
+              },
+              {
+                "id": "sr-02",
+                "name": "弧形淋浴房",
+                "images": [
+                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+                  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+                  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "toilet",
+            "name": "马桶",
+            "bannerImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+            "products": [
+              {
+                "id": "tl-01",
+                "name": "智能马桶",
+                "images": [
+                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
+                  "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80"
+                ]
+              },
+              {
+                "id": "tl-02",
+                "name": "壁挂马桶",
+                "images": [
+                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
+                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hardware",
+            "name": "五金",
+            "bannerImage": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=1200&q=80",
+            "products": [
+              {
+                "id": "hw-01",
+                "name": "浴室挂件套装",
+                "images": [
+                  "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80",
+                  "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
+                ]
+              },
+              {
+                "id": "hw-02",
+                "name": "龙头五金",
+                "images": [
+                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
+                  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+                  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "shower",
+            "name": "花洒",
             "bannerImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&q=80",
             "products": [
-              { "id": "cm-01", "name": "简约浴室柜 A", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
-              { "id": "cm-02", "name": "简约浴室柜 B", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" }
+              {
+                "id": "sh-01",
+                "name": "恒温花洒",
+                "images": [
+                  "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",
+                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+                ]
+              },
+              {
+                "id": "sh-02",
+                "name": "暗装花洒",
+                "images": [
+                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80",
+                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+                  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
+                ]
+              }
             ]
           },
           {
-            "id": "cab-chinese",
-            "name": "轻中式",
-            "bannerImage": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=1200&q=80",
+            "id": "bathtub",
+            "name": "浴缸",
+            "bannerImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
             "products": [
-              { "id": "cc-01", "name": "中式浴室柜 A", "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80" },
-              { "id": "cc-02", "name": "中式浴室柜 B", "image": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80" }
+              {
+                "id": "bt-01",
+                "name": "独立式浴缸",
+                "images": [
+                  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+                  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
+                ]
+              },
+              {
+                "id": "bt-02",
+                "name": "嵌入式浴缸",
+                "images": [
+                  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80",
+                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
+                  "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80"
+                ]
+              }
             ]
           },
           {
-            "id": "cab-home",
-            "name": "家装产品",
-            "bannerImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+            "id": "towel-rack",
+            "name": "毛巾架",
+            "bannerImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80",
             "products": [
-              { "id": "ch-01", "name": "家装浴室柜 A", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" },
-              { "id": "ch-02", "name": "家装浴室柜 B", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
+              {
+                "id": "tr-01",
+                "name": "电热毛巾架",
+                "images": [
+                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
+                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
+                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80"
+                ]
+              },
+              {
+                "id": "tr-02",
+                "name": "壁挂毛巾架",
+                "images": [
+                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
+                  "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80",
+                  "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
+                ]
+              }
             ]
           },
           {
-            "id": "cab-whole",
-            "name": "全域融合",
-            "bannerImage": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80",
+            "id": "paper-holder",
+            "name": "卫生纸架",
+            "bannerImage": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=1200&q=80",
             "products": [
-              { "id": "cw-01", "name": "全域浴室柜 A", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
-              { "id": "cw-02", "name": "全域浴室柜 B", "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80" }
+              {
+                "id": "ph-01",
+                "name": "免打孔纸架",
+                "images": [
+                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80",
+                  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+                  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+                ]
+              },
+              {
+                "id": "ph-02",
+                "name": "黄铜纸架",
+                "images": [
+                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
+                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+                ]
+              }
             ]
           }
         ],
-        "bannerImage": "",
-        "products": []
-      },
-      {
-        "id": "shower",
-        "name": "淋浴房",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
-        "products": [
-          { "id": "shw-01", "name": "一字型淋浴房", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" },
-          { "id": "shw-02", "name": "弧形淋浴房", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
-        ]
-      },
-      {
-        "id": "smart",
-        "name": "智能卫浴",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80",
-        "products": [
-          { "id": "sm-01", "name": "智能马桶", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
-          { "id": "sm-02", "name": "智能浴缸", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" }
-        ]
-      },
-      {
-        "id": "hardware",
-        "name": "卫浴五金",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=1200&q=80",
-        "products": [
-          { "id": "hw-01", "name": "龙头套装", "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80" },
-          { "id": "hw-02", "name": "花洒套装", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" }
-        ]
-      },
-      {
-        "id": "parts",
-        "name": "五金配件",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "",
-        "products": []
-      },
-      {
-        "id": "ceramic",
-        "name": "陶瓷套件",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "",
-        "products": []
-      },
-      {
-        "id": "custom-wood",
-        "name": "定制板材",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
-        "bannerImage": "",
-        "products": []
-      },
-      {
-        "id": "custom-stone",
-        "name": "定制石材",
-        "expanded": false,
-        "hasSub": false,
-        "subCategories": [],
         "bannerImage": "",
         "products": []
       }
@@ -265,54 +366,186 @@
   },
   "cases": {
     "modules": [
-      { "id": "address", "name": "地址" },
-      { "id": "product", "name": "产品" },
-      { "id": "video", "name": "视频" }
+      {
+        "id": "address",
+        "name": "地址"
+      },
+      {
+        "id": "product",
+        "name": "产品"
+      },
+      {
+        "id": "video",
+        "name": "视频"
+      }
     ],
     "addressGroups": [
       {
-        "id": "xiao-feng-yin-yue",
-        "community": "晓风印月",
-        "location": "浙江·杭州",
+        "id": "xiang-xie-shui-an",
+        "community": "香榭水岸",
+        "location": "",
         "images": [
-          { "id": "xf-01", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" },
-          { "id": "xf-02", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" },
-          { "id": "xf-03", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
-          { "id": "xf-04", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" }
+          {
+            "id": "xxsa-01",
+            "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+          },
+          {
+            "id": "xxsa-02",
+            "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
+          }
         ]
       },
       {
-        "id": "gui-yu-jiang-nan",
-        "community": "桂语江南",
-        "location": "浙江·杭州",
+        "id": "tian-chen-yu-fu",
+        "community": "天辰誉府",
+        "location": "",
         "images": [
-          { "id": "gy-01", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" },
-          { "id": "gy-02", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" },
-          { "id": "gy-03", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" },
-          { "id": "gy-04", "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80" }
+          {
+            "id": "tcyf-01",
+            "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+          },
+          {
+            "id": "tcyf-02",
+            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+          }
         ]
       },
       {
-        "id": "yun-shang-li",
-        "community": "雲上里",
-        "location": "浙江·金华",
+        "id": "hai-zhou-shang-cheng",
+        "community": "海州上城",
+        "location": "",
         "images": [
-          { "id": "ys-01", "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80" },
-          { "id": "ys-02", "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" }
+          {
+            "id": "hzsc-01",
+            "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
+          },
+          {
+            "id": "hzsc-02",
+            "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "wu-tong-fu",
+        "community": "梧桐府",
+        "location": "",
+        "images": [
+          {
+            "id": "wtf-01",
+            "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
+          },
+          {
+            "id": "wtf-02",
+            "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "shun-shan-fu",
+        "community": "舜山府",
+        "location": "",
+        "images": [
+          {
+            "id": "ssf-01",
+            "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80"
+          },
+          {
+            "id": "ssf-02",
+            "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "hansiya",
+        "community": "汉斯格雅",
+        "location": "",
+        "images": [
+          {
+            "id": "hsy-01",
+            "image": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80"
+          },
+          {
+            "id": "hsy-02",
+            "image": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "xierdun",
+        "community": "希尔顿",
+        "location": "",
+        "images": [
+          {
+            "id": "xed-01",
+            "image": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80"
+          },
+          {
+            "id": "xed-02",
+            "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "shitang",
+        "community": "石塘",
+        "location": "",
+        "images": [
+          {
+            "id": "st-01",
+            "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+          },
+          {
+            "id": "st-02",
+            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+          }
         ]
       }
     ],
     "products": [
-      { "id": "cp-01", "name": "KL822190", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" },
-      { "id": "cp-02", "name": "KL822186", "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" },
-      { "id": "cp-03", "name": "KL822184", "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80" },
-      { "id": "cp-04", "name": "LB-1-73", "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80" },
-      { "id": "cp-05", "name": "MG-06", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" },
-      { "id": "cp-06", "name": "VG-1-01", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" }
+      {
+        "id": "cp-01",
+        "name": "KL822190",
+        "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
+      },
+      {
+        "id": "cp-02",
+        "name": "KL822186",
+        "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+      },
+      {
+        "id": "cp-03",
+        "name": "KL822184",
+        "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
+      },
+      {
+        "id": "cp-04",
+        "name": "LB-1-73",
+        "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+      },
+      {
+        "id": "cp-05",
+        "name": "MG-06",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+      },
+      {
+        "id": "cp-06",
+        "name": "VG-1-01",
+        "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+      }
     ],
     "videos": [
-      { "id": "cv-01", "title": "品牌宣传片", "poster": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80", "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4" },
-      { "id": "cv-02", "title": "月相大师系列", "poster": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80", "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4" }
+      {
+        "id": "cv-01",
+        "title": "品牌宣传片",
+        "poster": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+        "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+      },
+      {
+        "id": "cv-02",
+        "title": "月相大师系列",
+        "poster": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+        "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+      }
     ]
   },
   "homeSlides": [
@@ -331,7 +564,10 @@
       "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
       "title": "精工造物之美",
       "subtitle": "The Beauty of Craftsmanship",
-      "desc": ["设计有了秩序，精确不冗余", "生活有了秩序，从容不慌张"],
+      "desc": [
+        "设计有了秩序，精确不冗余",
+        "生活有了秩序，从容不慌张"
+      ],
       "buttonText": "即刻探索",
       "tabPath": "/pages/products/products"
     },
@@ -340,7 +576,10 @@
       "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
       "title": "美好秩序的见证",
       "subtitle": "Witness the Beautiful Order",
-      "desc": ["每一个真实的空间", "都是设计秩序的延续"],
+      "desc": [
+        "每一个真实的空间",
+        "都是设计秩序的延续"
+      ],
       "buttonText": "即刻探索",
       "tabPath": "/pages/cases/cases"
     },
@@ -349,7 +588,10 @@
       "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
       "title": "与我们联系",
       "subtitle": "Get In Touch",
-      "desc": ["扫码添加顾问", "开启专属定制方案"],
+      "desc": [
+        "扫码添加顾问",
+        "开启专属定制方案"
+      ],
       "buttonText": "即刻联系",
       "tabPath": "/pages/stores/stores"
     }

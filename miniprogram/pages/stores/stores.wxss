@@ -39,6 +39,59 @@
   margin-top: 20rpx;
 }
 
+/* ============ 公司地址 ============ */
+.contact-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64rpx;
+}
+
+.address-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rpx;
+}
+
+.address-name {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #1A1A1A;
+  letter-spacing: 3rpx;
+}
+
+.address-detail {
+  font-size: 23rpx;
+  color: #999999;
+  letter-spacing: 1rpx;
+  line-height: 1.8;
+  margin-top: 12rpx;
+  padding: 0 24rpx;
+  text-align: center;
+}
+
+.address-nav-btn {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAFA;
+  border-radius: 50%;
+  border: 1rpx solid #EEEEEE;
+}
+
+.address-nav-icon {
+  font-size: 32rpx;
+  color: #1A1A1A;
+}
+
+.nav-btn-hover {
+  background: #F0F0F0;
+  transform: scale(0.92);
+}
+
 /* ============ Contact ============ */
 .sec-contact {
   padding: 120rpx 48rpx 80rpx;
@@ -105,6 +158,9 @@
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 48rpx;
   gap: 48rpx;
   margin-top: 32rpx;
 }
