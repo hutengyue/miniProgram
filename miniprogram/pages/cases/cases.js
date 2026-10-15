@@ -7,10 +7,10 @@ Page({
   data: {
     modules: [],
     activeModule: 'address',
+    activeCommunityId: '',
     addressGroups: [],
     products: [],
     videos: [],
-    searchKeyword: '',
     playingVideoId: ''
   },
 
@@ -22,8 +22,10 @@ Page({
       that._allAddressGroups = cases.addressGroups || []
       that._allProducts = cases.products || []
       that._allVideos = cases.videos || []
+      var firstGroup = that._allAddressGroups[0]
       that.setData({
         modules: cases.modules || [],
+        activeCommunityId: firstGroup ? firstGroup.id : '',
         addressGroups: that._allAddressGroups,
         products: that._allProducts,
         videos: that._allVideos
@@ -45,58 +47,19 @@ Page({
       activeModule: id,
       playingVideoId: ''
     })
-    this.applySearch(this.data.searchKeyword)
   },
 
-  // 统一的搜索过滤入口
-  applySearch: function(keyword) {
-    keyword = (keyword || '').trim()
-    var module = this.data.activeModule
-
-    if (module === 'address') {
-      var groups = this._allAddressGroups || []
-      if (keyword) {
-        groups = groups.filter(function(g) {
-          return g.community.indexOf(keyword) > -1 ||
-                 (g.location || '').indexOf(keyword) > -1
-        })
-      }
-      this.setData({ addressGroups: groups })
-    } else if (module === 'product') {
-      var products = this._allProducts || []
-      if (keyword) {
-        products = products.filter(function(p) {
-          return (p.name || '').toLowerCase().indexOf(keyword.toLowerCase()) > -1
-        })
-      }
-      this.setData({ products: products })
-    } else if (module === 'video') {
-      var videos = this._allVideos || []
-      if (keyword) {
-        videos = videos.filter(function(v) {
-          return (v.title || '').indexOf(keyword) > -1
-        })
-      }
-      this.setData({ videos: videos })
-    }
+  // 切换小区二级分类
+  onCommunityChange: function(e) {
+    var id = e.currentTarget.dataset.id
+    if (id === this.data.activeCommunityId) return
+    this.setData({ activeCommunityId: id })
   },
 
-  onSearchInput: function(e) {
-    var keyword = e.detail.value
-    this.setData({ searchKeyword: keyword })
-    this.applySearch(keyword)
-  },
-
-  onClearSearch: function() {
-    this.setData({ searchKeyword: '' })
-    this.applySearch('')
-  },
-
-  // 点击小区图片 → 全屏预览该小区所有图
+  // 点击小区图片 → 全屏预览当前小区所有图
   onPreviewImage: function(e) {
-    var groupIndex = e.currentTarget.dataset.group
     var imgIndex = e.currentTarget.dataset.index
-    var group = this.data.addressGroups[groupIndex]
+    var group = this.data.addressGroups.filter(function(g) { return g.id === this.data.activeCommunityId })[0]
     if (!group) return
     var urls = group.images.map(function(img) { return img.image })
     wx.previewImage({

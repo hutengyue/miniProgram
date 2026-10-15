@@ -11,38 +11,31 @@
       </view>
     </view>
 
-    <!-- 搜索框 -->
-    <view class="search-section">
-      <view class="search-box">
-        <input class="search-input" placeholder="{{activeModule === 'address' ? '请输入小区关键词' : activeModule === 'product' ? '请输入型号关键词' : '请输入视频关键词'}}" placeholder-class="search-placeholder" value="{{searchKeyword}}" bindinput="onSearchInput" confirm-type="search" />
-        <view wx:if="{{searchKeyword}}" class="search-clear" bindtap="onClearSearch">
-          <view class="clear-line clear-line-left"></view>
-          <view class="clear-line clear-line-right"></view>
-        </view>
-        <view class="search-icon-btn">
-          <image class="search-icon-img" src="/images/search.png" mode="aspectFit"></image>
-        </view>
-      </view>
-    </view>
-
-    <!-- ========== 地址模块：按小区分组 ========== -->
+    <!-- ========== 地址模块：二级小区分类 ========== -->
     <view class="module-view" wx:if="{{activeModule === 'address'}}">
-      <view class="address-group" wx:for="{{addressGroups}}" wx:key="id" wx:for-item="group" wx:for-index="groupIndex">
-        <view class="group-header">
-          <view class="group-name">{{group.community}}</view>
-          <view class="group-location">{{group.location}}</view>
-          <view class="group-line"></view>
+      <scroll-view class="community-tabs" scroll-x enhanced="{{true}}" show-scrollbar="{{false}}">
+        <view class="community-tab {{activeCommunityId === item.id ? 'active' : ''}}"
+          wx:for="{{addressGroups}}" wx:key="id"
+          data-id="{{item.id}}" bindtap="onCommunityChange">
+          {{item.community}}
         </view>
-        <view class="group-grid">
-          <view class="group-img-item" wx:for="{{group.images}}" wx:key="id" wx:for-item="img" wx:for-index="imgIndex"
-            data-group="{{groupIndex}}" data-index="{{imgIndex}}" bindtap="onPreviewImage">
-            <image class="group-img {{loadedImages[img.image] ? 'img-loaded' : ''}}" src="{{img.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{img.image}}"></image>
+      </scroll-view>
+
+      <block wx:for="{{addressGroups}}" wx:key="id" wx:for-item="group" wx:for-index="groupIndex">
+        <view wx:if="{{activeCommunityId === group.id}}" class="address-group">
+          <view class="group-header">
+            <view class="group-name">{{group.community}}</view>
+            <view class="group-location">{{group.location}}</view>
+            <view class="group-line"></view>
+          </view>
+          <view class="group-grid">
+            <view class="group-img-item" wx:for="{{group.images}}" wx:key="id" wx:for-item="img" wx:for-index="imgIndex"
+              data-group="{{groupIndex}}" data-index="{{imgIndex}}" bindtap="onPreviewImage">
+              <image class="group-img {{loadedImages[img.image] ? 'img-loaded' : ''}}" src="{{img.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{img.image}}"></image>
+            </view>
           </view>
         </view>
-      </view>
-      <view class="cases-empty" wx:if="{{addressGroups.length === 0}}">
-        <text class="empty-text">未找到相关小区</text>
-      </view>
+      </block>
     </view>
 
     <!-- ========== 产品模块：平铺网格 ========== -->

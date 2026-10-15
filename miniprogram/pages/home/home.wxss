@@ -44,11 +44,15 @@
   justify-content: center;
 }
 
-.top-bar-logo {
-  font-size: 36rpx;
-  color: rgba(255, 255, 255, 0.9);
-  letter-spacing: 8rpx;
-  font-weight: 300;
+.top-bar-logo-img {
+  height: 108rpx;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.top-bar-logo-img.img-loaded {
+  opacity: 1;
 }
 
 .top-bar-right {

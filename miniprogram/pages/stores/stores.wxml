@@ -22,7 +22,6 @@
         <view class="contact-phone-num">{{contact.phone}}</view>
         <van-icon name="phone" class="contact-call-icon" bindtap="onCallPhone" data-phone="{{contact.phone}}"></van-icon>
       </view>
-      <view class="contact-phone-label">{{contact.phoneLabel}}</view>
     </view>
 
     <!-- 关注官方账号 -->

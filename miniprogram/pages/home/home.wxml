@@ -1,7 +1,7 @@
 <view class="home-page">
   <view class="top-bar" style="padding-top: {{statusBarHeight}}px;">
     <view class="top-bar-center">
-      <text class="top-bar-logo">{{brand.brandName}}</text>
+      <image class="top-bar-logo-img {{loadedImages[brand.logo] ? 'img-loaded' : ''}}" src="{{brand.logo}}" mode="heightFix" bindload="onImgLoad" binderror="onImgError" data-src="{{brand.logo}}"></image>
     </view>
   </view>
 

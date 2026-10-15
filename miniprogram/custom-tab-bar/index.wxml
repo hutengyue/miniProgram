@@ -5,9 +5,13 @@
           wx:for="{{list}}"
           wx:key="index"
           data-index="{{index}}"
-          bindtap="switchTab">
+          bindtap="switchTab"
+          hover-class="tab-item-hover"
+          hover-stay-time="100">
+      <view class="tab-icon-wrap">
+        <van-icon name="{{item.icon}}" size="19px" color="{{selected === index ? '#FFFFFF' : 'rgba(255,255,255,0.42)'}}" />
+      </view>
       <text class="tab-text">{{item.text}}</text>
-      <view class="tab-underline" wx:if="{{selected === index}}"></view>
     </view>
   </view>
 </view>

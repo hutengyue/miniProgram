@@ -46,12 +46,23 @@
   padding: 0 8rpx;
 }
 
+.tab-item-hover {
+  opacity: 0.7;
+}
+
+/* ============ 图标 ============ */
+.tab-icon-wrap {
+  line-height: 1;
+}
+
+/* ============ 文字 ============ */
 .tab-text {
-  font-size: 26rpx;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 21rpx;
+  color: rgba(255, 255, 255, 0.45);
   letter-spacing: 2rpx;
   font-weight: 300;
-  transition: color 0.2s ease;
+  margin-top: 8rpx;
+  transition: color 0.25s ease;
 }
 
 .tab-item.active .tab-text {
@@ -59,10 +70,20 @@
   font-weight: 400;
 }
 
+/* ============ 下划线（绝对定位钉底，仅透明度切换） ============ */
 .tab-underline {
-  margin-top: 10rpx;
-  width: 32rpx;
-  height: 4rpx;
+  position: absolute;
+  bottom: 14rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26rpx;
+  height: 3rpx;
   background: #FFFFFF;
   border-radius: 2rpx;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.tab-item.active .tab-underline {
+  opacity: 1;
 }
