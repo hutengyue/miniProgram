@@ -1,6 +1,7 @@
 {
   "brand": {
     "brandName": "HESEINT赫世",
+    "logo": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/logo.png",
     "slogan": "设计师品牌·定制卫浴",
     "contactPhone": "15868623283",
     "contactName": "Cavalry",
@@ -93,7 +94,6 @@
   "contact": {
     "wechatQr": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/7bf9f02d4287c9db869877430b611c7b.jpg",
     "phone": "15868623283",
-    "phoneLabel": "设计顾问",
     "wechatCard": {
       "name": "Cavalry",
       "location": "浙江 杭州",
