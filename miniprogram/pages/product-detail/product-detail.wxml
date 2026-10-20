@@ -9,13 +9,41 @@
         <view class="detail-line"></view>
       </view>
 
-      <!-- 图片列表 -->
-      <view class="detail-img-list">
+      <!-- 图片 / 视频 模块切换（无视频时隐藏） -->
+      <view class="module-tabs" wx:if="{{product.videos.length > 0}}">
+        <view class="module-tab {{activeModule === 'image' ? 'active' : ''}}" data-id="image" bindtap="onModuleChange">
+          <view class="module-tab-text">图片</view>
+          <view class="module-tab-line"></view>
+        </view>
+        <view class="module-tab {{activeModule === 'video' ? 'active' : ''}}" data-id="video" bindtap="onModuleChange">
+          <view class="module-tab-text">视频</view>
+          <view class="module-tab-line"></view>
+        </view>
+      </view>
+
+      <!-- 图片模块：全宽无缝 -->
+      <view class="module-view" wx:if="{{activeModule === 'image' && product.images.length > 0}}">
         <image wx:for="{{product.images}}" wx:key="*this"
           class="detail-img {{loadedImages[item] ? 'img-loaded' : ''}}"
           src="{{item}}" mode="widthFix" lazy-load="true"
+          show-menu-by-longpress="{{true}}"
           bindload="onImgLoad" binderror="onImgError" data-src="{{item}}"
           data-index="{{index}}" bindtap="onPreviewImage"></image>
+      </view>
+
+      <!-- 视频模块：竖版 9:16 点击全屏 -->
+      <view class="module-view" wx:if="{{activeModule === 'video' && product.videos.length > 0}}">
+        <view class="video-list">
+          <view class="video-card" wx:for="{{product.videos}}" wx:key="url">
+            <view class="video-cover" data-index="{{index}}" bindtap="onPlayVideo" hover-class="video-cover-hover">
+              <image class="video-poster {{loadedImages[item.poster] ? 'img-loaded' : ''}}" src="{{item.poster}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{item.poster}}"></image>
+              <view class="video-play-btn">
+                <view class="play-triangle"></view>
+              </view>
+            </view>
+            <view class="video-title" wx:if="{{item.title}}">{{item.title}}</view>
+          </view>
+        </view>
       </view>
     </block>
 
