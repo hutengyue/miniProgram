@@ -157,314 +157,1239 @@
   "products": {
     "categories": [
       {
-        "id": "all-bath",
-        "name": "全卫产品",
+        "id": "zhonggu",
+        "name": "中古风",
         "expanded": true,
         "hasSub": true,
         "subCategories": [
           {
-            "id": "bathroom-cabinet",
-            "name": "浴室柜",
-            "bannerImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+            "id": "zhonggu-chaji",
+            "name": "诧季系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "bc-01",
-                "name": "悬浮浴室柜",
+                "id": "zhonggu-chaji",
+                "name": "诧季系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-                  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/诧季系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/诧季系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/诧季系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/诧季系列/3.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "悬浮浴室柜",
-                    "poster": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-                  }
-                ]
-              },
-              {
-                "id": "bc-02",
-                "name": "落地浴室柜",
-                "images": [
-                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
-                ],
-                "videos": [
-                  {
-                    "title": "落地浴室柜",
-                    "poster": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "诧季系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/诧季系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/诧季系列/H-2409 诧季系列.mp4"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "shower-room",
-            "name": "淋浴房",
-            "bannerImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
+            "id": "zhonggu-diemei",
+            "name": "蝶美系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "sr-01",
-                "name": "极窄边淋浴房",
+                "id": "zhonggu-diemei",
+                "name": "蝶美系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
-                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-                  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蝶美系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蝶美系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蝶美系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蝶美系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蝶美系列/4.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "极窄边淋浴房",
-                    "poster": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-                  }
-                ]
-              },
-              {
-                "id": "sr-02",
-                "name": "弧形淋浴房",
-                "images": [
-                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-                  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-                  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
-                ],
-                "videos": [
-                  {
-                    "title": "弧形淋浴房",
-                    "poster": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "蝶美系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蝶美系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蝶美系列/视频（蝶美系列）.mp4"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "toilet",
-            "name": "马桶",
-            "bannerImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+            "id": "zhonggu-guanmu",
+            "name": "蒄木系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "tl-01",
-                "name": "智能马桶",
+                "id": "zhonggu-guanmu",
+                "name": "蒄木系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
-                  "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蒄木系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蒄木系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蒄木系列/2.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "智能马桶",
-                    "poster": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-                  }
-                ]
-              },
-              {
-                "id": "tl-02",
-                "name": "壁挂马桶",
-                "images": [
-                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
-                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80"
-                ],
-                "videos": [
-                  {
-                    "title": "壁挂马桶",
-                    "poster": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "蒄木系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蒄木系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/蒄木系列/视频（蒄木系列）.mp4"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "hardware",
-            "name": "五金",
-            "bannerImage": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=1200&q=80",
+            "id": "zhonggu-hewei",
+            "name": "赫维系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "hw-01",
-                "name": "浴室挂件套装",
+                "id": "zhonggu-hewei",
+                "name": "赫维系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80",
-                  "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/赫维系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/赫维系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/赫维系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/赫维系列/3.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "浴室挂件套装",
-                    "poster": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-                  }
-                ]
-              },
-              {
-                "id": "hw-02",
-                "name": "龙头五金",
-                "images": [
-                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
-                  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-                  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
-                ],
-                "videos": [
-                  {
-                    "title": "龙头五金",
-                    "poster": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "赫维系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/赫维系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/赫维系列/视频（赫维系列）.mp4"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "shower",
-            "name": "花洒",
-            "bannerImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&q=80",
+            "id": "zhonggu-junshi",
+            "name": "郡诗系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "sh-01",
-                "name": "恒温花洒",
+                "id": "zhonggu-junshi",
+                "name": "郡诗系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",
-                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/郡诗系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/郡诗系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/郡诗系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/郡诗系列/3.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "恒温花洒",
-                    "poster": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-                  }
-                ]
-              },
-              {
-                "id": "sh-02",
-                "name": "暗装花洒",
-                "images": [
-                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80",
-                  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-                  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
-                ],
-                "videos": [
-                  {
-                    "title": "暗装花洒",
-                    "poster": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "郡诗系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/郡诗系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/郡诗系列/视频（郡诗系列）.mp4"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "bathtub",
-            "name": "浴缸",
-            "bannerImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+            "id": "zhonggu-yifan",
+            "name": "伊梵系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "bt-01",
-                "name": "独立式浴缸",
+                "id": "zhonggu-yifan",
+                "name": "伊梵系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-                  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/伊梵系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/伊梵系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/伊梵系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/伊梵系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/伊梵系列/4.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "独立式浴缸",
-                    "poster": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-                  }
-                ]
-              },
-              {
-                "id": "bt-02",
-                "name": "嵌入式浴缸",
-                "images": [
-                  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80",
-                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
-                  "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80"
-                ],
-                "videos": [
-                  {
-                    "title": "嵌入式浴缸",
-                    "poster": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "伊梵系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/伊梵系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/伊梵系列/视频（伊梵系列）.mp4"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "towel-rack",
-            "name": "毛巾架",
-            "bannerImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80",
+            "id": "zhonggu-yunxuan",
+            "name": "云轩系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "tr-01",
-                "name": "电热毛巾架",
+                "id": "zhonggu-yunxuan",
+                "name": "云轩系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
-                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
-                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/云轩系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/云轩系列/1.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "电热毛巾架",
-                    "poster": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-                  }
-                ]
-              },
-              {
-                "id": "tr-02",
-                "name": "壁挂毛巾架",
-                "images": [
-                  "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
-                  "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80",
-                  "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
-                ],
-                "videos": [
-                  {
-                    "title": "壁挂毛巾架",
-                    "poster": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "云轩系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/云轩系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/云轩系列/视频（云轩系列）.mp4"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "paper-holder",
-            "name": "卫生纸架",
-            "bannerImage": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=1200&q=80",
+            "id": "zhonggu-zhiyu",
+            "name": "知屿系列",
+            "bannerImage": "",
             "products": [
               {
-                "id": "ph-01",
-                "name": "免打孔纸架",
+                "id": "zhonggu-zhiyu",
+                "name": "知屿系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80",
-                  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-                  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/知屿系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/知屿系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/知屿系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/知屿系列/3.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "免打孔纸架",
-                    "poster": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "知屿系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/知屿系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/中古风/知屿系列/视频（知屿系列）.mp4"
                   }
                 ]
-              },
+              }
+            ]
+          }
+        ],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "yishi",
+        "name": "意式风",
+        "expanded": false,
+        "hasSub": true,
+        "subCategories": [
+          {
+            "id": "yishi-difen",
+            "name": "迪芬系列",
+            "bannerImage": "",
+            "products": [
               {
-                "id": "ph-02",
-                "name": "黄铜纸架",
+                "id": "yishi-difen",
+                "name": "迪芬系列",
                 "images": [
-                  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
-                  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-                  "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/迪芬系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/迪芬系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/迪芬系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/迪芬系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/迪芬系列/4.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/迪芬系列/5.jpg"
+                ],
+                "videos": []
+              }
+            ]
+          },
+          {
+            "id": "yishi-gexu",
+            "name": "格序系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-gexu",
+                "name": "格序系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/格序系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/格序系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/格序系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/格序系列/3.jpg"
                 ],
                 "videos": [
                   {
-                    "title": "黄铜纸架",
-                    "poster": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80",
-                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
+                    "title": "格序系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/格序系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/格序系列/视频（格序系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishi-jueduo",
+            "name": "爵朵系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-jueduo",
+                "name": "爵朵系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/爵朵系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/爵朵系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/爵朵系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/爵朵系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "爵朵系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/爵朵系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/爵朵系列/视频（爵朵系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishi-shuying",
+            "name": "疏影系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-shuying",
+                "name": "疏影系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/疏影系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/疏影系列/1.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "疏影系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/疏影系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/疏影系列/视频（疏影系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishi-songying",
+            "name": "松影系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-songying",
+                "name": "松影系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/松影系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/松影系列/1.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "松影系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/松影系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/松影系列/视频（松影系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishi-wenshi",
+            "name": "聞世系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-wenshi",
+                "name": "聞世系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/聞世系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/聞世系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/聞世系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/聞世系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "聞世系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/聞世系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/聞世系列/视频（聞世系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishi-xingyao",
+            "name": "星曜系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-xingyao",
+                "name": "星曜系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/星曜系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/星曜系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/星曜系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/星曜系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "星曜系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/星曜系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/星曜系列/视频（星曜系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishi-jijian",
+            "name": "意式极简",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-jijian",
+                "name": "意式极简",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/意式极简/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/意式极简/1.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "意式极简",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/意式极简/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/意式极简/视频（意式极简）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishi-yuguang",
+            "name": "遇光系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishi-yuguang",
+                "name": "遇光系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/遇光系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/遇光系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/遇光系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/遇光系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "遇光系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/遇光系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/意式风/遇光系列/视频（遇光系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "jijian",
+        "name": "极简风",
+        "expanded": false,
+        "hasSub": true,
+        "subCategories": [
+          {
+            "id": "jijian-defu",
+            "name": "德芙系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-defu",
+                "name": "德芙系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/德芙系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/德芙系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/德芙系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/德芙系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "德芙系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/德芙系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/德芙系列/视频（德芙系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jijian-lange",
+            "name": "朗格系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-lange",
+                "name": "朗格系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/朗格系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/朗格系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/朗格系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/朗格系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "朗格系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/朗格系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/朗格系列/视频（朗格系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jijian-manyue",
+            "name": "满月系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-manyue",
+                "name": "满月系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/满月系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/满月系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/满月系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/满月系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/满月系列/4.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "满月系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/满月系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/满月系列/视频（满月系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jijian-moer",
+            "name": "摩尔系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-moer",
+                "name": "摩尔系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/摩尔系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/摩尔系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/摩尔系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/摩尔系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/摩尔系列/4.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "摩尔系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/摩尔系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/摩尔系列/视频（摩尔系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jijian-tina",
+            "name": "缇娜系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-tina",
+                "name": "缇娜系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/缇娜系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/缇娜系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/缇娜系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/缇娜系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "缇娜系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/缇娜系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/缇娜系列/视频（缇娜系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jijian-yafan",
+            "name": "雅梵系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-yafan",
+                "name": "雅梵系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/雅梵系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/雅梵系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/雅梵系列/2.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "雅梵系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/雅梵系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/雅梵系列/视频（雅梵系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jijian-yien",
+            "name": "怡恩系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-yien",
+                "name": "怡恩系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/怡恩系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/怡恩系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/怡恩系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/怡恩系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/怡恩系列/4.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "怡恩系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/怡恩系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/怡恩系列/视频（怡恩系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jijian-zhimei",
+            "name": "至美系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "jijian-zhimei",
+                "name": "至美系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/至美系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/至美系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/至美系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/至美系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "至美系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/至美系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/极简风/至美系列/视频（至美系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "fashi",
+        "name": "法式风",
+        "expanded": false,
+        "hasSub": true,
+        "subCategories": [
+          {
+            "id": "fashi-gongting",
+            "name": "宫廷系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "fashi-gongting",
+                "name": "宫廷系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/宫廷系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/宫廷系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/宫廷系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/宫廷系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "宫廷系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/宫廷系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/宫廷系列/视频（宫廷系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fashi-huicui",
+            "name": "荟萃系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "fashi-huicui",
+                "name": "荟萃系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/荟萃系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/荟萃系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/荟萃系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/荟萃系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "荟萃系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/荟萃系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/荟萃系列/视频（荟萃系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fashi-lishe",
+            "name": "丽舍系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "fashi-lishe",
+                "name": "丽舍系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/4.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/5.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "丽舍系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/丽舍系列/视频（丽舍系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fashi-ludai",
+            "name": "璐黛系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "fashi-ludai",
+                "name": "璐黛系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/璐黛系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/璐黛系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/璐黛系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/璐黛系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "璐黛系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/璐黛系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/璐黛系列/视频（璐黛系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fashi-ruoti",
+            "name": "若缇系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "fashi-ruoti",
+                "name": "若缇系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/若缇系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/若缇系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/若缇系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/若缇系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "若缇系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/若缇系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/若缇系列/视频（若缇系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fashi-yunjian",
+            "name": "云涧系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "fashi-yunjian",
+                "name": "云涧系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/云涧系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/云涧系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/云涧系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/云涧系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "云涧系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/云涧系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/法式风/云涧系列/视频（云涧系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "laoqian",
+        "name": "老钱风",
+        "expanded": false,
+        "hasSub": true,
+        "subCategories": [
+          {
+            "id": "laoqian-longlin",
+            "name": "龙鳞系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "laoqian-longlin",
+                "name": "龙鳞系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/4.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/5.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/6.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "龙鳞系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/龙鳞系列/视频（龙鳞系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "laoqian-runyu",
+            "name": "润玉系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "laoqian-runyu",
+                "name": "润玉系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/润玉系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/润玉系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/润玉系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/润玉系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/润玉系列/4.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "润玉系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/润玉系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/老钱风/润玉系列/视频（润玉系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "yishu",
+        "name": "艺术风",
+        "expanded": false,
+        "hasSub": true,
+        "subCategories": [
+          {
+            "id": "yishu-banlun",
+            "name": "半轮系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-banlun",
+                "name": "半轮系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/半轮系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/半轮系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/半轮系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/半轮系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "半轮系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/半轮系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/半轮系列/视频（半轮系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishu-chengguang",
+            "name": "澄光系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-chengguang",
+                "name": "澄光系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/澄光系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/澄光系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/澄光系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/澄光系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "澄光系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/澄光系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/澄光系列/视频（澄光系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishu-diexu",
+            "name": "谍序系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-diexu",
+                "name": "谍序系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/谍序系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/谍序系列/1.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "谍序系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/谍序系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/谍序系列/视频（谍序系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishu-huanying",
+            "name": "幻影系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-huanying",
+                "name": "幻影系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/幻影系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/幻影系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/幻影系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/幻影系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/幻影系列/4.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "幻影系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/幻影系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/幻影系列/视频（幻影系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishu-jishe",
+            "name": "及奢系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-jishe",
+                "name": "及奢系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/及奢系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/及奢系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/及奢系列/2.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "及奢系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/及奢系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/及奢系列/视频（及奢系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishu-mofang",
+            "name": "魔方系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-mofang",
+                "name": "魔方系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/魔方系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/魔方系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/魔方系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/魔方系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "魔方系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/魔方系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/魔方系列/视频（魔方系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishu-xingchen",
+            "name": "星辰系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-xingchen",
+                "name": "星辰系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/星辰系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/星辰系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/星辰系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/星辰系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "星辰系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/星辰系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/星辰系列/视频（星辰系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yishu-yani",
+            "name": "雅尼系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "yishu-yani",
+                "name": "雅尼系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/雅尼系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/雅尼系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/雅尼系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/雅尼系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "雅尼系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/雅尼系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/艺术风/雅尼系列/视频（雅尼系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bannerImage": "",
+        "products": []
+      },
+      {
+        "id": "qingshe",
+        "name": "轻奢风",
+        "expanded": false,
+        "hasSub": true,
+        "subCategories": [
+          {
+            "id": "qingshe-jingshuo",
+            "name": "景铄系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-jingshuo",
+                "name": "景铄系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/景铄系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/景铄系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/景铄系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/景铄系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "景铄系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/景铄系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/景铄系列/视频（景铄系列).mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qingshe-moying",
+            "name": "墨影系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-moying",
+                "name": "墨影系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/墨影系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/墨影系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/墨影系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/墨影系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "墨影系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/墨影系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/墨影系列/视频（墨影系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qingshe-mudi",
+            "name": "慕迪系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-mudi",
+                "name": "慕迪系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/慕迪系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/慕迪系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/慕迪系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/慕迪系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "慕迪系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/慕迪系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/慕迪系列/视频（慕迪系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qingshe-ruilan",
+            "name": "瑞岚系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-ruilan",
+                "name": "瑞岚系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/瑞岚系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/瑞岚系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/瑞岚系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/瑞岚系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "瑞岚系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/瑞岚系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/瑞岚系列/视频（瑞岚系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qingshe-songjian",
+            "name": "松涧系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-songjian",
+                "name": "松涧系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/松涧系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/松涧系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/松涧系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/松涧系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/松涧系列/4.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "松涧系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/松涧系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/松涧系列/视频（松涧系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qingshe-songyun",
+            "name": "宋韵系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-songyun",
+                "name": "宋韵系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/宋韵系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/宋韵系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/宋韵系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/宋韵系列/3.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/宋韵系列/4.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "宋韵系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/宋韵系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/宋韵系列/视频（宋韵系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qingshe-younuo",
+            "name": "优诺系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-younuo",
+                "name": "优诺系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/优诺系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/优诺系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/优诺系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/优诺系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "优诺系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/优诺系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/优诺系列/视频（优诺系列）.mp4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "qingshe-yusen",
+            "name": "屿森系列",
+            "bannerImage": "",
+            "products": [
+              {
+                "id": "qingshe-yusen",
+                "name": "屿森系列",
+                "images": [
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/屿森系列/首图.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/屿森系列/1.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/屿森系列/2.jpg",
+                  "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/屿森系列/3.jpg"
+                ],
+                "videos": [
+                  {
+                    "title": "屿森系列",
+                    "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/屿森系列/首图.jpg",
+                    "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/产品/轻奢风/屿森系列/视频（屿森系列）.mp4"
                   }
                 ]
               }
