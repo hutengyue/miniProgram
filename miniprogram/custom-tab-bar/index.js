@@ -14,7 +14,18 @@ Component({
   lifetimes: {
     attached: function() {
       var app = getApp()
-      this.setData({ selected: app.globalData.currentTab || 0 })
+      // 动态计算底部安全区高度，不依赖 CSS env()（部分 iOS 机型/基础库上 env 不可靠）
+      var safeBottom = 0
+      try {
+        var info = wx.getSystemInfoSync()
+        if (info.safeArea && info.screenHeight) {
+          safeBottom = info.screenHeight - info.safeArea.bottom
+        }
+      } catch (e) {}
+      this.setData({
+        selected: app.globalData.currentTab || 0,
+        safeBottom: safeBottom
+      })
     }
   },
 

@@ -21,8 +21,8 @@
         </view>
       </view>
 
-      <!-- 图片模块：全宽无缝 -->
-      <view class="module-view" wx:if="{{activeModule === 'image' && product.images.length > 0}}">
+      <!-- 图片模块：四周留边距 -->
+      <view class="module-view image-module" wx:if="{{activeModule === 'image' && product.images.length > 0}}">
         <image wx:for="{{product.images}}" wx:key="*this"
           class="detail-img {{loadedImages[item] ? 'img-loaded' : ''}}"
           src="{{item}}" mode="widthFix" lazy-load="true"
@@ -41,7 +41,6 @@
                 <view class="play-triangle"></view>
               </view>
             </view>
-            <view class="video-title" wx:if="{{item.title}}">{{item.title}}</view>
           </view>
         </view>
       </view>
