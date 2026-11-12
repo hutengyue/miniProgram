@@ -8,103 +8,8 @@
     "brandImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
     "sections": [
       {
-        "type": "hero",
-        "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
-        "nameEn": "HESEINT"
-      },
-      {
-        "type": "quote",
-        "title": "探索美好秩序",
-        "subtitle": "EXPLORE THE BEAUTIFUL ORDER",
-        "lines": [
-          "探索，是极致造物的偏执",
-          "秩序，是世间美好的真相"
-        ]
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "设计有了秩序，精确不冗余，于是产生了美",
-          "生活有了秩序，从容不慌张，便遇见了美好"
-        ],
-        "brandLine": "HESEINT 赫世定制卫浴",
-        "endLine": "探索美好秩序"
-      },
-      {
-        "type": "image",
-        "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1200&q=80"
-      },
-      {
-        "type": "section",
-        "title": "品牌简介",
-        "subtitle": "BRAND PROFILE",
-        "paragraphs": [
-          "赫世（HESEINT）卫浴创始于2013年佛山，源自德国核心设计理念。",
-          "产品线跨越全屋定制卫浴，涵盖浴室柜、智能马桶、淋浴房、龙头五金等多个品类。",
-          "始终坚信简约不简单，通过德系精工标准与东方审美融合，为全球用户带来品质家居体验。"
-        ],
-        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
-      },
-      {
-        "type": "section",
-        "title": "品牌历程",
-        "subtitle": "BRAND HISTORY",
-        "timeline": [
-          {
-            "year": "2013年",
-            "text": "佛山创立，源自德国HESEINT设计理念，开启定制卫浴之路。"
-          },
-          {
-            "year": "2014年",
-            "text": "投入大型窑炉生产线，全品类产品矩阵初现雏形。"
-          },
-          {
-            "year": "2016年",
-            "text": "进驻广州、深圳等一线城市高端卖场，品牌影响力快速辐射全国。"
-          },
-          {
-            "year": "2017年",
-            "text": "通过ISO9001国际质量体系认证，具备行业领先的研发与制造实力。"
-          },
-          {
-            "year": "2018年",
-            "text": "推出全新智能卫浴产品线，技术团队规模和制造能力再升级。"
-          },
-          {
-            "year": "2019年",
-            "text": "落地产能升级计划，完整覆盖浴室柜、淋浴房、陶瓷全品类制造。"
-          },
-          {
-            "year": "2020年",
-            "text": "HESEINT HOME智能家居系统发布，智控浴室场景，布局全屋智能生态。"
-          },
-          {
-            "year": "2021年",
-            "text": "行业首创定制化服务体验，覆盖全国200+城市服务网络。"
-          },
-          {
-            "year": "2022年",
-            "text": "推出设计师联名系列，高端形象持续提升，零售网络加速升级。"
-          },
-          {
-            "year": "2023年",
-            "text": "第三代生态系统发布，整体浴室解决方案成为行业标杆。"
-          },
-          {
-            "year": "2025年",
-            "text": "新一代MASTER SHOWROOM空间概念店全国布局，开启沉浸式卫浴消费体验新纪元。"
-          }
-        ]
-      },
-      {
-        "type": "section",
-        "title": "品牌信条",
-        "subtitle": "BRAND PHILOSOPHY",
-        "paragraphs": [
-          "将传统东方哲学与当代极简主义美学融合",
-          "产品摒弃繁杂，回归本源，传递纯粹的美好秩序",
-          "让设计带来温度，让空间拥有呼吸"
-        ]
+        "type": "fullImage",
+        "image": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/brand.png"
       },
       {
         "type": "section",
@@ -115,10 +20,6 @@
           "极简主义不是少，而是没有多余",
           "坚持德式精工，承载东方美学"
         ]
-      },
-      {
-        "type": "image",
-        "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80"
       }
     ]
   },
@@ -1011,174 +912,371 @@
         "name": "视频"
       }
     ],
-    "addressGroups": [
+    "communities": [
       {
-        "id": "xiang-xie-shui-an",
-        "community": "香榭水岸",
-        "location": "",
-        "images": [
+        "id": "case-0",
+        "name": "天辰誉府",
+        "rooms": [
           {
-            "id": "xxsa-01",
-            "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+            "id": "case-0-room-0",
+            "name": "儿子房",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/图文/2026_11_10_13_51_06_IMG_3362.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/图文/2026_11_10_13_51_06_IMG_3362.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/图文/2026_11_10_13_51_21_IMG_3363.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/图文/2026_11_10_13_51_26_IMG_3364.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/图文/2026_11_10_13_51_31_IMG_3365.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/图文/2026_11_10_13_51_36_IMG_3366.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/图文/2026_11_10_13_51_06_IMG_3362.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/儿子房/视频/二楼儿子房.mp4"
+              }
+            ]
           },
           {
-            "id": "xxsa-02",
-            "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80"
+            "id": "case-0-room-1",
+            "name": "二楼儿子卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_25_13_IMG_3326.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_25_13_IMG_3326.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_25_38_IMG_3327.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_25_54_IMG_3328.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_26_12_IMG_3329.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_26_27_IMG_3330.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_26_38_IMG_3331.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_26_55_IMG_3332.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/图文/2026_11_10_13_25_13_IMG_3326.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼儿子卫/视频/二楼儿子卫..mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-2",
+            "name": "二楼主卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_21_29_IMG_3319.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_21_29_IMG_3319.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_21_42_IMG_3320.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_22_10_IMG_3321.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_22_21_IMG_3322.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_22_33_IMG_3323.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_22_42_IMG_3324.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_24_33_IMG_3325.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/图文/2026_11_10_13_21_29_IMG_3319.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/二楼主卫/视频/二楼主卫..mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-3",
+            "name": "父母房",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_51_43_IMG_3367.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_51_43_IMG_3367.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_51_56_IMG_3368.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_52_07_IMG_3369.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_52_13_IMG_3370.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_52_18_IMG_3371.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_52_25_IMG_3372.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_52_37_IMG_3373.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/图文/2026_11_10_13_51_43_IMG_3367.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/父母房/视频/父母房.mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-4",
+            "name": "公卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/图文/2026_11_10_13_53_29_IMG_3374.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/图文/2026_11_10_13_53_29_IMG_3374.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/图文/2026_11_10_13_53_38_IMG_3375.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/图文/2026_11_10_13_53_46_IMG_3376.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/图文/2026_11_10_13_53_58_IMG_3377.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/图文/2026_11_10_13_54_07_IMG_3378.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/图文/2026_11_10_13_53_29_IMG_3374.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/公卫/视频/一楼公卫.mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-5",
+            "name": "三楼茶室卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_27_52_IMG_3333.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_27_52_IMG_3333.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_28_02_IMG_3334.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_28_12_IMG_3335.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_28_22_IMG_3336.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_28_34_IMG_3337.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_28_55_IMG_3338.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_29_07_IMG_3339.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/图文/2026_11_10_13_27_52_IMG_3333.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼茶室卫/视频/三楼茶室卫..mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-6",
+            "name": "三楼主卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_33_16_IMG_3350.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_33_16_IMG_3350.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_49_09_IMG_3352.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_49_27_IMG_3353.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_49_38_IMG_3354.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_49_46_IMG_3355.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_49_55_IMG_3356.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/图文/2026_11_10_13_33_16_IMG_3350.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/三楼主卫/视频/主卫.mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-7",
+            "name": "洗衣房",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/图文/2026_11_10_13_31_43_IMG_3345.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/图文/2026_11_10_13_31_43_IMG_3345.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/图文/2026_11_10_13_31_54_IMG_3346.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/图文/2026_11_10_13_32_03_IMG_3347.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/图文/2026_11_10_13_32_14_IMG_3348.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/图文/2026_11_10_13_32_24_IMG_3349.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/图文/2026_11_10_13_31_43_IMG_3345.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/洗衣房/视频/洗衣房.mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-8",
+            "name": "消毒洗手一体卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/图文/2026_11_10_13_30_35_IMG_3340.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/图文/2026_11_10_13_30_35_IMG_3340.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/图文/2026_11_10_13_30_49_IMG_3341.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/图文/2026_11_10_13_30_57_IMG_3342.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/图文/2026_11_10_13_31_07_IMG_3343.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/图文/2026_11_10_13_31_17_IMG_3344.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/图文/2026_11_10_13_30_35_IMG_3340.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/消毒洗手一体卫/视频/消毒洗手一体卫..mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-9",
+            "name": "阳台柜",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/图文/2026_11_10_13_50_06_IMG_3357.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/图文/2026_11_10_13_50_06_IMG_3357.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/图文/2026_11_10_13_50_14_IMG_3358.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/图文/2026_11_10_13_50_21_IMG_3359.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/图文/2026_11_10_13_50_29_IMG_3360.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/图文/2026_11_10_13_50_34_IMG_3361.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/图文/2026_11_10_13_50_06_IMG_3357.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/阳台柜/视频/阳台柜.mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-10",
+            "name": "一楼公卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_17_15_IMG_3311.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_17_15_IMG_3311.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_17_44_IMG_3312.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_18_12_IMG_3313.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_18_37_IMG_3314.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_19_25_IMG_3315.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_19_40_IMG_3316.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_19_54_IMG_3317.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_20_05_IMG_3318.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/图文/2026_11_10_13_17_15_IMG_3311.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼公卫/视频/一楼公卫.mp4"
+              }
+            ]
+          },
+          {
+            "id": "case-0-room-11",
+            "name": "一楼客卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/1.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/2.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/3.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/4.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/5.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/二楼.mp4"
+              },
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/二楼2.mp4"
+              },
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/全屋.mp4"
+              },
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/三楼主卫.mp4"
+              },
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/洗衣房.mp4"
+              },
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/阳台房洗衣柜.mp4"
+              },
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/一楼公卫.mp4"
+              },
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/图文/首图.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/天辰誉府/一楼客卫/视频/一楼客卫..mp4"
+              }
+            ]
           }
         ]
       },
       {
-        "id": "tian-chen-yu-fu",
-        "community": "天辰誉府",
-        "location": "",
-        "images": [
+        "id": "case-1",
+        "name": "梧桐府",
+        "rooms": [
           {
-            "id": "tcyf-01",
-            "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+            "id": "case-1-room-0",
+            "name": "次卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/次卫/图文/2026_11_10_14_57_58_IMG_3406.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/次卫/图文/2026_11_10_14_57_58_IMG_3406.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/次卫/图文/2026_11_10_14_58_08_IMG_3407.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/次卫/图文/2026_11_10_14_58_16_IMG_3408.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/次卫/图文/2026_11_10_14_57_58_IMG_3406.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/次卫/视频/次卫.mp4"
+              }
+            ]
           },
           {
-            "id": "tcyf-02",
-            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
-          }
-        ]
-      },
-      {
-        "id": "hai-zhou-shang-cheng",
-        "community": "海州上城",
-        "location": "",
-        "images": [
-          {
-            "id": "hzsc-01",
-            "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
+            "id": "case-1-room-1",
+            "name": "公卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_41_15_IMG_3382.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_41_15_IMG_3382.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_41_26_IMG_3383.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_41_36_IMG_3384.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_41_57_IMG_3385.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_42_07_IMG_3386.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_43_47_IMG_3387.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_43_57_IMG_3388.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_44_07_IMG_3389.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/图文/2026_11_10_14_41_15_IMG_3382.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫/视频/公卫.mp4"
+              }
+            ]
           },
           {
-            "id": "hzsc-02",
-            "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
-          }
-        ]
-      },
-      {
-        "id": "wu-tong-fu",
-        "community": "梧桐府",
-        "location": "",
-        "images": [
-          {
-            "id": "wtf-01",
-            "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
+            "id": "case-1-room-2",
+            "name": "公卫1",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫1/图文/2026_11_10_14_57_13_IMG_3403.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫1/图文/2026_11_10_14_57_13_IMG_3403.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫1/图文/2026_11_10_14_57_20_IMG_3404.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫1/图文/2026_11_10_14_57_29_IMG_3405.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫1/图文/2026_11_10_14_57_13_IMG_3403.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/公卫1/视频/公卫.mp4"
+              }
+            ]
           },
           {
-            "id": "wtf-02",
-            "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
-          }
-        ]
-      },
-      {
-        "id": "shun-shan-fu",
-        "community": "舜山府",
-        "location": "",
-        "images": [
-          {
-            "id": "ssf-01",
-            "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80"
+            "id": "case-1-room-3",
+            "name": "主卫",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_48_34_IMG_3390.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_48_34_IMG_3390.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_49_09_IMG_3391.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_49_18_IMG_3392.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_49_27_IMG_3393.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_49_36_IMG_3394.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_49_47_IMG_3395.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_49_58_IMG_3396.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_50_09_IMG_3397.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/图文/2026_11_10_14_48_34_IMG_3390.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫/视频/主卫.mp4"
+              }
+            ]
           },
           {
-            "id": "ssf-02",
-            "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
-          }
-        ]
-      },
-      {
-        "id": "hansiya",
-        "community": "汉斯格雅",
-        "location": "",
-        "images": [
-          {
-            "id": "hsy-01",
-            "image": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80"
-          },
-          {
-            "id": "hsy-02",
-            "image": "https://images.unsplash.com/photo-1585128903994-9788298932a0?w=800&q=80"
-          }
-        ]
-      },
-      {
-        "id": "xierdun",
-        "community": "希尔顿",
-        "location": "",
-        "images": [
-          {
-            "id": "xed-01",
-            "image": "https://images.unsplash.com/photo-1620626011761-96317d81b913?w=800&q=80"
-          },
-          {
-            "id": "xed-02",
-            "image": "https://images.unsplash.com/photo-1611844987438-4a8e285d325f?w=800&q=80"
-          }
-        ]
-      },
-      {
-        "id": "shitang",
-        "community": "石塘",
-        "location": "",
-        "images": [
-          {
-            "id": "st-01",
-            "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
-          },
-          {
-            "id": "st-02",
-            "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+            "id": "case-1-room-4",
+            "name": "主卫1",
+            "cover": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/图文/2026_11_10_14_54_48_IMG_3398.JPG",
+            "images": [
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/图文/2026_11_10_14_54_48_IMG_3398.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/图文/2026_11_10_14_55_06_IMG_3399.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/图文/2026_11_10_14_55_16_IMG_3400.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/图文/2026_11_10_14_55_27_IMG_3401.JPG",
+              "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/图文/2026_11_10_14_55_36_IMG_3402.JPG"
+            ],
+            "videos": [
+              {
+                "poster": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/图文/2026_11_10_14_54_48_IMG_3398.JPG",
+                "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/案例/梧桐府/主卫1/视频/主卫.mp4"
+              }
+            ]
           }
         ]
       }
     ],
-    "products": [
-      {
-        "id": "cp-01",
-        "name": "KL822190",
-        "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80"
-      },
-      {
-        "id": "cp-02",
-        "name": "KL822186",
-        "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
-      },
-      {
-        "id": "cp-03",
-        "name": "KL822184",
-        "image": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800&q=80"
-      },
-      {
-        "id": "cp-04",
-        "name": "LB-1-73",
-        "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
-      },
-      {
-        "id": "cp-05",
-        "name": "MG-06",
-        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
-      },
-      {
-        "id": "cp-06",
-        "name": "VG-1-01",
-        "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
-      }
-    ],
-    "videos": [
-      {
-        "id": "cv-01",
-        "title": "品牌宣传片",
-        "poster": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
-        "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-      },
-      {
-        "id": "cv-02",
-        "title": "月相大师系列",
-        "poster": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
-        "url": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4"
-      }
-    ]
+    "products": [],
+    "videos": []
   },
   "homeSlides": [
     {

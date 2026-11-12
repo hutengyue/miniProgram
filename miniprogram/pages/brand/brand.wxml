@@ -3,31 +3,9 @@
 
     <block wx:for="{{brand.sections}}" wx:key="index" wx:for-item="sec">
 
-      <!-- Hero 首图 -->
-      <view wx:if="{{sec.type === 'hero'}}" class="sec sec-hero">
-        <image class="hero-bg {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="aspectFill" bindload="onImgLoad" binderror="onImgError" data-src="{{sec.image}}"></image>
-      </view>
-
-      <!-- Quote 金句 -->
-      <view wx:elif="{{sec.type === 'quote'}}" class="sec sec-quote">
-        <view class="quote-title">{{sec.title}}</view>
-        <view class="quote-subtitle">{{sec.subtitle}}</view>
-        <view class="quote-divider"></view>
-        <view class="quote-lines">
-          <view class="quote-line" wx:for="{{sec.lines}}" wx:key="*this">{{item}}</view>
-        </view>
-      </view>
-
-      <!-- Text 文字段落 -->
-      <view wx:elif="{{sec.type === 'text'}}" class="sec sec-text">
-        <view class="text-para" wx:for="{{sec.paragraphs}}" wx:key="*this">{{item}}</view>
-        <view class="text-brand-line">{{sec.brandLine}}</view>
-        <view class="text-end-line">{{sec.endLine}}</view>
-      </view>
-
-      <!-- Image 全屏图（留呼吸感，窄边距 + 圆角） -->
-      <view wx:elif="{{sec.type === 'image'}}" class="sec sec-image">
-        <image class="full-img {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="widthFix" lazy-load="true" bindload="onImgLoad" data-src="{{sec.image}}"></image>
+      <!-- FullImage 整图铺满（无留白） -->
+      <view wx:if="{{sec.type === 'fullImage'}}" class="sec sec-full-image">
+        <image class="edge-img {{loadedImages[sec.image] ? 'img-loaded' : ''}}" src="{{sec.image}}" mode="widthFix" lazy-load="true" show-menu-by-longpress="{{true}}" bindload="onImgLoad" binderror="onImgError" data-src="{{sec.image}}"></image>
       </view>
 
       <!-- Section 通用 (标题+正文/时间轴+可选图) -->

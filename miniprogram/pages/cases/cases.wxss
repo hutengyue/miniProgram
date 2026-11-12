@@ -140,6 +140,11 @@
   opacity: 1;
 }
 
+/* 房间卡片点击反馈 */
+.room-hover {
+  opacity: 0.85;
+}
+
 /* ============ 产品模块：平铺网格 ============ */
 .product-grid {
   display: flex;

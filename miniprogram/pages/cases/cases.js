@@ -7,8 +7,9 @@ Page({
   data: {
     modules: [],
     activeModule: 'address',
+    communities: [],
     activeCommunityId: '',
-    addressGroups: [],
+    activeRooms: [],
     products: [],
     videos: []
   },
@@ -18,16 +19,12 @@ Page({
     var that = this
     dataService.getCases(function(cases) {
       if (!cases) return
-      that._allAddressGroups = cases.addressGroups || []
-      that._allProducts = cases.products || []
-      that._allVideos = cases.videos || []
-      var firstGroup = that._allAddressGroups[0]
+      var communities = cases.communities || []
+      that.setData(that.buildActiveState(communities, communities[0] ? communities[0].id : ''))
       that.setData({
         modules: cases.modules || [],
-        activeCommunityId: firstGroup ? firstGroup.id : '',
-        addressGroups: that._allAddressGroups,
-        products: that._allProducts,
-        videos: that._allVideos
+        products: cases.products || [],
+        videos: cases.videos || []
       })
     })
   },
@@ -38,36 +35,45 @@ Page({
     }
   },
 
+  buildActiveState: function(communities, activeId) {
+    var active = null
+    for (var i = 0; i < communities.length; i++) {
+      if (communities[i].id === activeId) {
+        active = communities[i]
+        break
+      }
+    }
+    return {
+      communities: communities,
+      activeCommunityId: activeId,
+      activeRooms: active ? (active.rooms || []) : []
+    }
+  },
+
   // 切换模块（地址/产品/视频）
   onModuleChange: function(e) {
     var id = e.currentTarget.dataset.id
     if (id === this.data.activeModule) return
-    this.setData({
-      activeModule: id,
-      playingVideoId: ''
-    })
+    this.setData({ activeModule: id })
   },
 
-  // 切换小区二级分类
+  // 切换小区
   onCommunityChange: function(e) {
     var id = e.currentTarget.dataset.id
     if (id === this.data.activeCommunityId) return
-    this.setData({ activeCommunityId: id })
+    this.setData(this.buildActiveState(this.data.communities, id))
   },
 
-  // 点击小区图片 → 全屏预览当前小区所有图
-  onPreviewImage: function(e) {
-    var imgIndex = e.currentTarget.dataset.index
-    var group = this.data.addressGroups.filter(function(g) { return g.id === this.data.activeCommunityId })[0]
-    if (!group) return
-    var urls = group.images.map(function(img) { return img.image })
-    wx.previewImage({
-      current: urls[imgIndex],
-      urls: urls
+  // 点击房间卡片 → 进入详情（复用产品详情页，展示图片+视频）
+  onRoomTap: function(e) {
+    var id = e.currentTarget.dataset.id
+    if (!id) return
+    wx.navigateTo({
+      url: '/pages/product-detail/product-detail?source=case&id=' + id
     })
   },
 
-  // 点击视频封面 → 全屏播放（9:16 竖屏视频）
+  // 点击视频封面 → 全屏播放
   onPlayVideo: function(e) {
     var id = e.currentTarget.dataset.id
     var video = (this.data.videos || []).filter(function(v) { return v.id === id })[0]

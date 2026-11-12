@@ -12,21 +12,33 @@ Page({
   onLoad: function(options) {
     var that = this
     var id = options.id || ''
+    var source = options.source || 'product'
+    if (source === 'case') {
+      // 案例房间详情：在 cases.communities[].rooms 中查找
+      dataService.getCases(function(cases) {
+        if (!cases) return
+        var found = null
+        var communities = cases.communities || []
+        for (var i = 0; i < communities.length && !found; i++) {
+          var rooms = communities[i].rooms || []
+          for (var j = 0; j < rooms.length; j++) {
+            if (rooms[j].id === id) {
+              found = rooms[j]
+              break
+            }
+          }
+        }
+        that.showDetail(found, false)
+      })
+      return
+    }
     dataService.getProducts(function(products) {
       if (!products) return
-      // 遍历所有分类（含子分类）找到对应产品
+      // 遍历所有分类找到对应产品
       var found = null
       var categories = products.categories || []
       for (var i = 0; i < categories.length && !found; i++) {
-        var cat = categories[i]
-        var list = []
-        if (cat.hasSub && cat.subCategories && cat.subCategories.length > 0) {
-          for (var j = 0; j < cat.subCategories.length; j++) {
-            list = list.concat(cat.subCategories[j].products || [])
-          }
-        } else {
-          list = cat.products || []
-        }
+        var list = categories[i].products || []
         for (var k = 0; k < list.length; k++) {
           if (list[k].id === id) {
             found = list[k]
@@ -34,14 +46,22 @@ Page({
           }
         }
       }
-      if (found) {
-        // 防御：旧格式数据缺 images/videos 字段时兜底，避免渲染层 wx:for undefined 崩溃
-        found.images = Array.isArray(found.images) ? found.images : []
-        found.videos = Array.isArray(found.videos) ? found.videos : []
-        that.setData({ product: found })
-        wx.setNavigationBarTitle({ title: found.name || '产品详情' })
-      }
+      that.showDetail(found)
     })
+  },
+
+  showDetail: function(found, showHeader) {
+    if (!found) return
+    // 防御：数据缺 images/videos 字段时兜底，避免渲染层 wx:for undefined 崩溃
+    found.images = Array.isArray(found.images) ? found.images : []
+    found.videos = Array.isArray(found.videos) ? found.videos : []
+    this.setData({
+      product: found,
+      showHeader: showHeader !== false
+    })
+    if (showHeader !== false) {
+      wx.setNavigationBarTitle({ title: found.name || '详情' })
+    }
   },
 
   // 切换模块（图片/视频）

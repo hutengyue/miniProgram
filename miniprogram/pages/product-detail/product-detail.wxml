@@ -2,8 +2,8 @@
   <scroll-view class="detail-scroll" scroll-y enhanced="{{true}}" show-scrollbar="{{false}}">
 
     <block wx:if="{{product}}">
-      <!-- 产品标题 -->
-      <view class="detail-header">
+      <!-- 产品标题（案例来源不显示） -->
+      <view class="detail-header" wx:if="{{showHeader}}">
         <view class="detail-name">{{product.name}}</view>
         <view class="detail-id">{{product.id}}</view>
         <view class="detail-line"></view>

@@ -11,31 +11,27 @@
       </view>
     </view>
 
-    <!-- ========== 地址模块：二级小区分类 ========== -->
+    <!-- ========== 地址模块：小区切换 + 房间列表 ========== -->
     <view class="module-view" wx:if="{{activeModule === 'address'}}">
       <scroll-view class="community-tabs" scroll-x enhanced="{{true}}" show-scrollbar="{{false}}">
         <view class="community-tab {{activeCommunityId === item.id ? 'active' : ''}}"
-          wx:for="{{addressGroups}}" wx:key="id"
+          wx:for="{{communities}}" wx:key="id"
           data-id="{{item.id}}" bindtap="onCommunityChange">
-          {{item.community}}
+          {{item.name}}
         </view>
       </scroll-view>
 
-      <block wx:for="{{addressGroups}}" wx:key="id" wx:for-item="group" wx:for-index="groupIndex">
-        <view wx:if="{{activeCommunityId === group.id}}" class="address-group">
-          <view class="group-header">
-            <view class="group-name">{{group.community}}</view>
-            <view class="group-location" wx:if="{{group.location}}">{{group.location}}</view>
-            <view class="group-line"></view>
-          </view>
-          <view class="group-grid">
-            <view class="group-img-item" wx:for="{{group.images}}" wx:key="id" wx:for-item="img" wx:for-index="imgIndex"
-              data-group="{{groupIndex}}" data-index="{{imgIndex}}" bindtap="onPreviewImage">
-              <image class="group-img {{loadedImages[img.image] ? 'img-loaded' : ''}}" src="{{img.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{img.image}}"></image>
-            </view>
+      <view class="address-group">
+        <view class="group-grid">
+          <view class="group-img-item" wx:for="{{activeRooms}}" wx:key="id"
+            data-id="{{item.id}}" bindtap="onRoomTap" hover-class="room-hover">
+            <image class="group-img {{loadedImages[item.cover] ? 'img-loaded' : ''}}" src="{{item.cover}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{item.cover}}"></image>
           </view>
         </view>
-      </block>
+        <view class="cases-empty" wx:if="{{activeRooms.length === 0}}">
+          <text class="empty-text">敬请期待</text>
+        </view>
+      </view>
     </view>
 
     <!-- ========== 产品模块：平铺网格 ========== -->
