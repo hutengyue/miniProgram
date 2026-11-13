@@ -35,23 +35,19 @@
     "socialAccounts": [
       {
         "name": "视频号",
-        "handle": "HESEINT赫世",
-        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20green%20and%20white%20wechat%20channels%20video%20logo%20center&image_size=square_hd"
+        "qrCode": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/二维码/视频号.jpg"
       },
       {
         "name": "公众号",
-        "handle": "HESEINT赫世",
-        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20green%20and%20white%20wechat%20official%20account%20qr%20code%20center&image_size=square_hd"
+        "qrCode": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/二维码/公众号.jpg"
       },
       {
         "name": "小红书",
-        "handle": "@HESEINT赫世",
-        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20red%20and%20white%20xiaohongshu%20logo%20center&image_size=square_hd"
+        "qrCode": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/二维码/小红书.jpg"
       },
       {
         "name": "抖音",
-        "handle": "@HESEINT赫世卫浴",
-        "qrCode": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=realistic%20qr%20code%20style%20black%20and%20white%20douyin%20logo%20center&image_size=square_hd"
+        "qrCode": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/二维码/抖音号.jpg"
       }
     ]
   },

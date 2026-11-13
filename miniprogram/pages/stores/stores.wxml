@@ -58,8 +58,6 @@
               bindload="onImgLoad" binderror="onImgError" data-src="{{acc.qrCode}}"></image>
           </view>
           <view class="social-name">{{acc.name}}</view>
-          <view class="social-handle">{{acc.handle}}</view>
-          <view class="social-long-press">长按识别</view>
         </view>
       </view>
     </view>

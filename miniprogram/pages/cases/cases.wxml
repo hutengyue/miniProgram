@@ -6,7 +6,7 @@
       <view class="module-tab {{activeModule === item.id ? 'active' : ''}}"
         wx:for="{{modules}}" wx:key="id"
         data-id="{{item.id}}" bindtap="onModuleChange">
-        <view class="module-tab-text">{{item.name}}</view>
+        <view class="modules-tab-text">{{item.name}}</view>
         <view class="module-tab-line"></view>
       </view>
     </view>
