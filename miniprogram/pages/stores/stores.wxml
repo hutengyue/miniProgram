@@ -35,9 +35,9 @@
       </view>
 
       <!-- 电话 -->
-      <view class="contact-phone">
+      <view class="contact-phone" bindtap="onCallPhone" data-phone="{{contact.phone}}">
         <view class="contact-phone-num">{{contact.phone}}</view>
-        <van-icon name="phone" class="contact-call-icon" bindtap="onCallPhone" data-phone="{{contact.phone}}"></van-icon>
+        <van-icon name="phone" class="contact-call-icon" />
       </view>
     </view>
 
