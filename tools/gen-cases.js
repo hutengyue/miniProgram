@@ -68,9 +68,7 @@ data.cases = {
     { id: 'product', name: '产品' },
     { id: 'video', name: '视频' }
   ],
-  communities: communities,
-  products: [],
-  videos: []
+  communities: communities
 }
 fs.writeFileSync(SITE_DATA, JSON.stringify(data, null, 2) + '\n')
 

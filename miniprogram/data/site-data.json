@@ -1270,14 +1270,12 @@
           }
         ]
       }
-    ],
-    "products": [],
-    "videos": []
+    ]
   },
   "homeSlides": [
     {
       "id": "brand",
-      "video": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/trailer.mp4",
+      "video": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/首页/trailer.mp4",
       "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
       "title": "定制家的气质",
       "subtitle": "Customize the temperament of home",
@@ -1287,6 +1285,7 @@
     },
     {
       "id": "products",
+      "video": "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/首页/trailer2.mp4",
       "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
       "title": "精工造物之美",
       "subtitle": "The Beauty of Craftsmanship",

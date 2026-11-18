@@ -145,7 +145,20 @@
   opacity: 0.85;
 }
 
-/* ============ 产品模块：平铺网格 ============ */
+/* ============ 产品模块：风格分组 ============ */
+.product-group {
+  padding-top: 8rpx;
+}
+
+.product-group-name {
+  padding: 32rpx 0 0;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1A1A1A;
+  letter-spacing: 6rpx;
+}
+
 .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +181,7 @@
 
 .product-img {
   width: 100%;
-  height: 380rpx;
+  height: 441rpx;
   background: #E8E8E8;
   display: block;
   opacity: 0;
@@ -214,7 +227,7 @@
 
 .video-poster {
   width: 100%;
-  height: 590rpx;
+  height: 588rpx;
   background: #E8E8E8;
   display: block;
   opacity: 0;

@@ -34,22 +34,26 @@
       </view>
     </view>
 
-    <!-- ========== 产品模块：平铺网格 ========== -->
+    <!-- ========== 产品模块：按风格分组的全部产品 ========== -->
     <view class="module-view" wx:elif="{{activeModule === 'product'}}">
-      <view class="product-grid">
-        <view class="product-item" wx:for="{{products}}" wx:key="id">
-          <view class="product-img-wrap">
-            <image class="product-img {{loadedImages[item.image] ? 'img-loaded' : ''}}" src="{{item.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{item.image}}"></image>
+      <view class="product-group" wx:for="{{productGroups}}" wx:key="id" wx:for-item="group">
+        <view class="product-group-name">{{group.name}}</view>
+        <view class="product-grid">
+          <view class="product-item" wx:for="{{group.products}}" wx:key="id"
+            data-id="{{item.id}}" bindtap="onProductTap" hover-class="room-hover">
+            <view class="product-img-wrap">
+              <image class="product-img {{loadedImages[item.image] ? 'img-loaded' : ''}}" src="{{item.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{item.image}}"></image>
+            </view>
+            <view class="product-name">{{item.name}}</view>
           </view>
-          <view class="product-name">{{item.name}}</view>
         </view>
       </view>
-      <view class="cases-empty" wx:if="{{products.length === 0}}">
+      <view class="cases-empty" wx:if="{{productGroups.length === 0}}">
         <text class="empty-text">未找到相关产品</text>
       </view>
     </view>
 
-    <!-- ========== 视频模块：竖版视频卡片 ========== -->
+    <!-- ========== 视频模块：全部视频汇总 ========== -->
     <view class="module-view" wx:elif="{{activeModule === 'video'}}">
       <view class="video-list">
         <view class="video-card" wx:for="{{videos}}" wx:key="id">
@@ -59,7 +63,6 @@
               <view class="play-triangle"></view>
             </view>
           </view>
-          <view class="video-title">{{item.title}}</view>
         </view>
       </view>
       <view class="cases-empty" wx:if="{{videos.length === 0}}">
