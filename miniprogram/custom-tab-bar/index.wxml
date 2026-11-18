@@ -1,6 +1,6 @@
 <view class="tab-bar {{transparent ? 'tab-bar-transparent' : ''}}" style="padding-bottom: {{safeBottom}}px">
   <view class="tab-bar-border"></view>
-  <view class="tab-bar-inner">
+  <view class="tab-bar-inner" style="padding-bottom: {{safeBottom / 2}}px">
     <view class="tab-item {{selected === index ? 'active' : ''}}"
           wx:for="{{list}}"
           wx:key="index"
