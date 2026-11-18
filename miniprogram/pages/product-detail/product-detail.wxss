@@ -39,46 +39,51 @@
   margin-top: 24rpx;
 }
 
-/* ============ 模块切换 tab ============ */
-.module-tabs {
+/* ============ 模块切换 tab：胶囊滑块 ============ */
+.module-tabs-wrap {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 16rpx 32rpx 24rpx;
+  padding: 8rpx 32rpx 24rpx;
+}
+
+.module-tabs {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  padding: 6rpx;
+  background: #E7E7E7;
+  border-radius: 44rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.12);
+}
+
+/* 滑块：随选中项左右滑动（品牌金色） */
+.seg-slider {
+  position: absolute;
+  top: 6rpx;
+  bottom: 6rpx;
+  left: 6rpx;
+  width: calc((100% - 12rpx) / 2);
+  background: #C9A962;
+  border-radius: 38rpx;
+  box-shadow: 0 4rpx 12rpx rgba(201, 169, 98, 0.4);
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .module-tab {
-  margin: 0 40rpx;
   position: relative;
-  padding-bottom: 14rpx;
-}
-
-.module-tab-text {
+  z-index: 1;
+  flex: 1;
+  padding: 18rpx 60rpx;
+  text-align: center;
   font-size: 28rpx;
-  color: #999999;
+  color: #666666;
   letter-spacing: 4rpx;
-  transition: color 0.25s ease;
+  transition: color 0.3s ease;
 }
 
-.module-tab.active .module-tab-text {
-  color: #1A1A1A;
-  font-weight: 600;
-}
-
-.module-tab-line {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 4rpx;
-  background: #1A1A1A;
-  border-radius: 2rpx;
-  transform: translateX(-50%);
-  transition: width 0.25s ease;
-}
-
-.module-tab.active .module-tab-line {
-  width: 40rpx;
+.module-tab.active {
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 /* ============ 模块切换动画 ============ */

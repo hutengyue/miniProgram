@@ -9,15 +9,12 @@
         <view class="detail-line"></view>
       </view>
 
-      <!-- 图片 / 视频 模块切换（无视频时隐藏） -->
-      <view class="module-tabs" wx:if="{{product.videos.length > 0}}">
-        <view class="module-tab {{activeModule === 'image' ? 'active' : ''}}" data-id="image" bindtap="onModuleChange">
-          <view class="module-tab-text">图片</view>
-          <view class="module-tab-line"></view>
-        </view>
-        <view class="module-tab {{activeModule === 'video' ? 'active' : ''}}" data-id="video" bindtap="onModuleChange">
-          <view class="module-tab-text">视频</view>
-          <view class="module-tab-line"></view>
+      <!-- 图片 / 视频 模块切换：胶囊滑块（无视频时隐藏） -->
+      <view class="module-tabs-wrap" wx:if="{{product.videos.length > 0}}">
+        <view class="module-tabs">
+          <view class="seg-slider" style="transform: translateX({{activeModule === 'video' ? 100 : 0}}%)"></view>
+          <view class="module-tab {{activeModule === 'image' ? 'active' : ''}}" data-id="image" bindtap="onModuleChange">图片</view>
+          <view class="module-tab {{activeModule === 'video' ? 'active' : ''}}" data-id="video" bindtap="onModuleChange">视频</view>
         </view>
       </view>
 

@@ -22,9 +22,10 @@
   padding: 6rpx;
   background: #E7E7E7;
   border-radius: 44rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.12);
 }
 
-/* 滑块：随选中项左右滑动 */
+/* 滑块：随选中项左右滑动（品牌金色） */
 .seg-slider {
   position: absolute;
   top: 6rpx;
@@ -33,6 +34,7 @@
   width: calc((100% - 12rpx) / 3);
   background: #1A1A1A;
   border-radius: 38rpx;
+  box-shadow: 0 4rpx 12rpx rgba(201, 169, 98, 0.4);
   transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

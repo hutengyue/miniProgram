@@ -119,15 +119,6 @@ Page({
     })
   },
 
-  // 点击产品卡片 → 进入产品详情（产品来源，显示产品名）
-  onProductTap: function(e) {
-    var id = e.currentTarget.dataset.id
-    if (!id) return
-    wx.navigateTo({
-      url: '/pages/product-detail/product-detail?id=' + id
-    })
-  },
-
   // 点击视频封面 → 全屏播放
   onPlayVideo: function(e) {
     var id = e.currentTarget.dataset.id

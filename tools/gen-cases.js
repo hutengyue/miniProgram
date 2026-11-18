@@ -35,8 +35,12 @@ function buildRoom(community, room) {
 
   const images = imgFiles.map(function (f) { return url(community, room, '图文', f) })
   const cover = images[0] || ''
+  // 封面用 OSS 视频截帧（取第 1 秒画面），避免多个视频共用同一张房间图
   const videos = videoFiles.map(function (f) {
-    return { poster: cover, url: url(community, room, '视频', f) }
+    return {
+      poster: url(community, room, '视频', f) + '?x-oss-process=video/snapshot,t_1000,f_jpg,m_fast',
+      url: url(community, room, '视频', f)
+    }
   })
   return { images: images, videos: videos }
 }

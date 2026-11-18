@@ -36,13 +36,13 @@
       </view>
     </view>
 
-    <!-- ========== 产品模块：按风格分组的全部产品 ========== -->
+    <!-- ========== 产品模块：小区分组 → 房间卡片（显示房间名） ========== -->
     <view class="module-view" wx:elif="{{activeModule === 'product'}}">
       <view class="product-group" wx:for="{{productGroups}}" wx:key="id" wx:for-item="group">
         <view class="product-group-name">{{group.name}}</view>
         <view class="product-grid">
           <view class="product-item" wx:for="{{group.products}}" wx:key="id"
-            data-id="{{item.id}}" bindtap="onProductTap" hover-class="room-hover">
+            data-id="{{item.id}}" bindtap="onRoomTap" hover-class="room-hover">
             <view class="product-img-wrap">
               <image class="product-img {{loadedImages[item.image] ? 'img-loaded' : ''}}" src="{{item.image}}" mode="aspectFill" lazy-load="true" bindload="onImgLoad" binderror="onImgError" data-src="{{item.image}}"></image>
             </view>
