@@ -7,6 +7,7 @@ Page({
   data: {
     modules: [],
     activeModule: 'address',
+    activeModuleIndex: 0,
     communities: [],
     activeCommunityId: '',
     activeRooms: [],
@@ -17,39 +18,28 @@ Page({
   onLoad: function() {
     getApp().globalData.currentTab = 3
     var that = this
-    this._caseVideos = []
-    this._productVideos = []
     dataService.getCases(function(cases) {
       if (!cases) return
       var communities = cases.communities || []
       that.setData(that.buildActiveState(communities, communities[0] ? communities[0].id : ''))
-      that.setData({ modules: cases.modules || [] })
-      that._caseVideos = that.collectRoomVideos(communities)
-      that.updateVideos()
-    })
-    // 产品模块：与产品页共用 products 数据（按风格分组）；同时收集产品视频
-    dataService.getProducts(function(products) {
-      if (!products) return
+      // 产品模块：与地址同源（小区分组 → 房间卡片，显示房间名）
       var groups = []
-      var videos = []
-      var categories = products.categories || []
-      for (var i = 0; i < categories.length; i++) {
-        var list = categories[i].products || []
-        if (!list.length) continue
-        var group = { id: categories[i].id, name: categories[i].name, products: [] }
-        for (var j = 0; j < list.length; j++) {
-          var p = list[j]
-          group.products.push({ id: p.id, name: p.name, image: (p.images || [])[0] || '' })
-          var vids = p.videos || []
-          for (var k = 0; k < vids.length; k++) {
-            videos.push({ id: p.id + '-v' + k, poster: vids[k].poster, url: vids[k].url })
-          }
+      for (var i = 0; i < communities.length; i++) {
+        var rooms = communities[i].rooms || []
+        var group = {
+          id: communities[i].id,
+          name: communities[i].name,
+          products: rooms.map(function(r) {
+            return { id: r.id, name: r.name, image: r.cover }
+          })
         }
-        groups.push(group)
+        if (group.products.length) groups.push(group)
       }
-      that.setData({ productGroups: groups })
-      that._productVideos = videos
-      that.updateVideos()
+      that.setData({
+        modules: cases.modules || [],
+        productGroups: groups,
+        videos: that.collectRoomVideos(communities)
+      })
     })
   },
 
@@ -59,7 +49,7 @@ Page({
     }
   },
 
-  // 汇总视频：案例房间视频 + 产品视频
+  // 视频模块：全部案例房间视频
   collectRoomVideos: function(communities) {
     var list = []
     for (var i = 0; i < communities.length; i++) {
@@ -72,10 +62,6 @@ Page({
       }
     }
     return list
-  },
-
-  updateVideos: function() {
-    this.setData({ videos: this._caseVideos.concat(this._productVideos) })
   },
 
   buildActiveState: function(communities, activeId) {
