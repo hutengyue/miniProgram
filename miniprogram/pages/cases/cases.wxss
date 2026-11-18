@@ -8,45 +8,49 @@
   height: 100vh;
 }
 
-/* ============ 左上角模块切换 ============ */
-.module-tabs {
+/* ============ 顶部模块切换：胶囊滑块 ============ */
+.module-tabs-wrap {
   display: flex;
-  align-items: center;
-  padding: 24rpx 32rpx 0;
+  justify-content: center;
+  padding: 36rpx 32rpx 8rpx;
+}
+
+.module-tabs {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  padding: 6rpx;
+  background: #E7E7E7;
+  border-radius: 44rpx;
+}
+
+/* 滑块：随选中项左右滑动 */
+.seg-slider {
+  position: absolute;
+  top: 6rpx;
+  bottom: 6rpx;
+  left: 6rpx;
+  width: calc((100% - 12rpx) / 3);
+  background: #1A1A1A;
+  border-radius: 38rpx;
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .module-tab {
-  margin-right: 56rpx;
   position: relative;
-  padding-bottom: 16rpx;
-}
-
-.module-tab-text {
-  font-size: 30rpx;
-  color: #999999;
+  z-index: 1;
+  flex: 1;
+  padding: 18rpx 52rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666666;
   letter-spacing: 4rpx;
   transition: color 0.3s ease;
 }
 
-.module-tab.active .module-tab-text {
-  color: #1A1A1A;
-  font-weight: 600;
-}
-
-.module-tab-line {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 4rpx;
-  background: #1A1A1A;
-  border-radius: 2rpx;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
-}
-
-.module-tab.active .module-tab-line {
-  width: 40rpx;
+.module-tab.active {
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 /* ============ 二级小区分类 tab ============ */

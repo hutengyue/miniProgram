@@ -97,7 +97,10 @@ Page({
   onModuleChange: function(e) {
     var id = e.currentTarget.dataset.id
     if (id === this.data.activeModule) return
-    this.setData({ activeModule: id })
+    this.setData({
+      activeModule: id,
+      activeModuleIndex: e.currentTarget.dataset.index || 0
+    })
   },
 
   // 切换小区

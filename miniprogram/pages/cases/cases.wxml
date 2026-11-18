@@ -1,13 +1,15 @@
 <view class="cases-page">
   <scroll-view class="cases-scroll" scroll-y>
 
-    <!-- 左上角三模块切换 -->
-    <view class="module-tabs">
-      <view class="module-tab {{activeModule === item.id ? 'active' : ''}}"
-        wx:for="{{modules}}" wx:key="id"
-        data-id="{{item.id}}" bindtap="onModuleChange">
-        <view class="modules-tab-text">{{item.name}}</view>
-        <view class="module-tab-line"></view>
+    <!-- 顶部模块切换：胶囊滑块 -->
+    <view class="module-tabs-wrap">
+      <view class="module-tabs">
+        <view class="seg-slider" style="transform: translateX({{activeModuleIndex * 100}}%)"></view>
+        <view class="module-tab {{activeModule === item.id ? 'active' : ''}}"
+          wx:for="{{modules}}" wx:key="id"
+          data-id="{{item.id}}" data-index="{{index}}" bindtap="onModuleChange">
+          {{item.name}}
+        </view>
       </view>
     </view>
 
