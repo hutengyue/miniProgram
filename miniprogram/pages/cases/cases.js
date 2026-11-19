@@ -21,7 +21,9 @@ Page({
     dataService.getCases(function(cases) {
       if (!cases) return
       var communities = cases.communities || []
-      that.setData(that.buildActiveState(communities, communities[0] ? communities[0].id : ''))
+      // 地址模块：优先使用小区图片画廊（villages），无则回退到案例小区
+      var addressList = (cases.villages && cases.villages.length) ? cases.villages : communities
+      that.setData(that.buildActiveState(addressList, addressList[0] ? addressList[0].id : ''))
       // 产品模块：与地址同源（小区分组 → 房间卡片，显示房间名）
       var groups = []
       for (var i = 0; i < communities.length; i++) {
@@ -72,10 +74,18 @@ Page({
         break
       }
     }
+    var activeRooms = active ? (active.rooms || []) : []
+    // 小区图片画廊：无 rooms 时把 images 映射为网格卡片
+    if (!activeRooms.length && active && active.images && active.images.length) {
+      activeRooms = []
+      for (var k = 0; k < active.images.length; k++) {
+        activeRooms.push({ id: active.id + '-img-' + k, cover: active.images[k] })
+      }
+    }
     return {
       communities: communities,
       activeCommunityId: activeId,
-      activeRooms: active ? (active.rooms || []) : []
+      activeRooms: activeRooms
     }
   },
 
@@ -96,10 +106,25 @@ Page({
     this.setData(this.buildActiveState(this.data.communities, id))
   },
 
-  // 点击房间卡片 → 进入详情（案例来源，无标题）
+  // 点击房间卡片 → 进入详情（案例来源，无标题）；点击画廊图片 → 全屏预览
   onRoomTap: function(e) {
     var id = e.currentTarget.dataset.id
     if (!id) return
+    if (id.indexOf('-img-') > -1) {
+      var active = null
+      var list = this.data.communities || []
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].id === this.data.activeCommunityId) {
+          active = list[i]
+          break
+        }
+      }
+      if (active && active.images && active.images.length) {
+        var index = parseInt(id.split('-img-')[1], 10) || 0
+        wx.previewImage({ current: active.images[index], urls: active.images })
+      }
+      return
+    }
     wx.navigateTo({
       url: '/pages/product-detail/product-detail?source=case&id=' + id
     })

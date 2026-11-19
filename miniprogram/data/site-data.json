@@ -908,6 +908,59 @@
         "name": "视频"
       }
     ],
+    "villages": [
+      {
+        "id": "village-0",
+        "name": "方远合璟府",
+        "images": [
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/方远合璟府/首图.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/方远合璟府/1.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/方远合璟府/2.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/方远合璟府/3.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/方远合璟府/4.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/方远合璟府/5.jpg"
+        ]
+      },
+      {
+        "id": "village-1",
+        "name": "朗成云筑",
+        "images": [
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/朗成云筑/首图.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/朗成云筑/1.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/朗成云筑/2.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/朗成云筑/3.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/朗成云筑/4.jpg"
+        ]
+      },
+      {
+        "id": "village-2",
+        "name": "武林壹号",
+        "images": [
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/首图.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/1.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/2.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/3.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/4.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/5.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/6.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/武林壹号/7.jpg"
+        ]
+      },
+      {
+        "id": "village-3",
+        "name": "绿城凤起潮鸣",
+        "images": [
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/首图.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/1.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/2.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/3.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/4.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/5.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/6.jpg",
+          "https://cavalryy.oss-cn-hangzhou.aliyuncs.com/boke/2025/04/12/小区/绿城凤起潮鸣/7.jpg"
+        ]
+      }
+    ],
     "communities": [
       {
         "id": "case-0",
